@@ -3,7 +3,6 @@ import Project from './ui/project';
 import librarypic from './projectimg/library.png'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
-AOS.init();
 const Projects = () => {
     return (
         <section id="projects">
@@ -16,7 +15,7 @@ const Projects = () => {
                         <Project img={librarypic} 
                         title="E-Commerce-library"
                         para="Using best practices with Html (BEM), Css, and javaScript, while using React (+hooks) i built a fake E-library
-                        with a clean UI design with a easy-to-understand layout for the website."
+                        and a clean UI design with a easy-to-understand layout for the website."
                         githublink="https://github.com/OZY3112/E-Commerce-library"
                         websitelink="https://libraryozy.netlify.app/#/"
                         tools="HTML, CSS, JavaScript, React, Node.Js"
@@ -28,4 +27,5 @@ const Projects = () => {
     );
 }
 
+AOS.init();
 export default Projects;

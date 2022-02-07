@@ -6,7 +6,7 @@ const Footer = () => {
         <footer id="footer">
             <div className="footer__cont">
                 <div className="footer__logo--cont">
-                    <div className="footer__logo"><img src={Logo} alt="" className="footer__logo--img" /></div>
+                    <a href='#landing' className="footer__logo click"><img src={Logo} alt="" className="footer__logo--img" /></a>
                 </div>
                 <ul className="footer__link--list">
                     <li className="footer__link hover-effect hover-effect--dark"><a href="#aboutme" className="footer__link--anchor">About me</a></li>

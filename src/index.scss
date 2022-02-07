@@ -127,11 +127,22 @@ animationsss
 @keyframes fadeup{
   0%{
     opacity: 0;
-    top: 55%;
+    top: -55%;
   }
   100%{
     opacity: 1;
-    top: 50%;
+    top: 0%;
+  }
+}
+@keyframes pop{
+  0%{
+    scale: 0;
+  }
+  50%{
+    scale: 1.2;
+  }
+  100%{
+    scale: 1;
   }
 }
 /* 
@@ -285,12 +296,11 @@ LANDINGGG
     }
   }
   .landing__scroll--cont{
-    z-index: 10000;
     position: absolute;
     width: 100%;
-    bottom: 2%;
+    bottom: 1%;
     .landing__scroll{
-      margin-top: 1rem;
+      bottom: -10rem;
       position: absolute;
       transform: translate(-50%);
       left: 50%;
@@ -333,7 +343,7 @@ ABOUT ME
 */
 #aboutme{
   height: 100%;
-  padding-top: -5rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   .aboutme__section--title-cont{    
     width: 100%;
@@ -824,7 +834,7 @@ FOOTER
 
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
-@if (max-width: 768px) {
+@media (max-width: 768px) {
   
     .landing__discription--cont{
       width: 100%;
