@@ -5,7 +5,7 @@ import Projects from './compos/Projects';
 import Skills from './compos/Skills';
 import Contacts from './compos/contants';
 import Landing from './compos/Landing';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import {  useLayoutEffect, useState } from 'react';
 import SyncLoader from "react-spinners/SyncLoader";
 
 function App() {
