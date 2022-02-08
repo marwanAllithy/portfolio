@@ -28,7 +28,6 @@ function App() {
   const themeToggler = () => {
     theme === 'light' ?  setTheme('dark') : setTheme("light")
   }
-  const StyledApp = styled.div
 
   const handleLightmode = () => {
     setLightmode(true)
@@ -39,7 +38,7 @@ function App() {
         setDarkMode(true)
         setLightmode(false)
     }
-    useEffect(() => {
+    useLayoutEffect(() => {
         
     }, [darkmode])
   return (

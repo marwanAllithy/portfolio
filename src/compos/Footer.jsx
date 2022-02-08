@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Logo from '../assets/logo-light.svg'
 const Footer = () => {
@@ -6,7 +5,7 @@ const Footer = () => {
         <footer id="footer">
             <div className="footer__cont">
                 <div className="footer__logo--cont">
-                    <a href='#landing' className="footer__logo click"><img src={Logo} alt="" className="footer__logo--img" /></a>
+                    <a href='#navbar' className="footer__logo click"><img src={Logo} alt="" className="footer__logo--img" /></a>
                 </div>
                 <ul className="footer__link--list">
                     <li className="footer__link hover-effect hover-effect--dark"><a href="#aboutme" className="footer__link--anchor">About me</a></li>

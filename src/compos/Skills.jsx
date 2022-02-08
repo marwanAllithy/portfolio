@@ -8,8 +8,6 @@ import sass from './techimgs/SASS-icon.png'
 import ts from './techimgs/typescript-icon.svg'
 import Techitem from './ui/techitem';
 import css from './techimgs/css.svg'
-import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
@@ -22,7 +20,7 @@ const Skills = () => {
                 <div className="skill__section--title--cont">
                     <h2 className="skill__section--title" data-aos="fade-up">My <span className="blue"> technological Stack</span>.</h2>
                 </div>
-             <div className="skills__skill-cont">
+             <div className="skills__skill--cont">
 
                 <div className="skill__Proficient--cont">
                     <div className="skill__Proficient" data-aos="fade-up"data-aos-duration="1000">
