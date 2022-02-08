@@ -13,10 +13,10 @@ const Contants = ({lightmode, darkmode}) => {
     const [success, setSuccess] = useState(false);
     const sendEmail = (e) => {
         e.preventDefault();
-        setLoading(true)
-
+        
         emailjs.sendForm('service_yfl4yvh', 'template_0initsy', e.target, 'user_Haw7geORIGqUyOapjh7SU')
         .then((result) => {
+            setLoading(false)
 
             setSuccess(true)
         }, (error) => {
@@ -26,7 +26,7 @@ const Contants = ({lightmode, darkmode}) => {
         }).catch()
         
             e.target.reset();
-            setLoading(false)
+            setLoading(true)
            
             
         };
