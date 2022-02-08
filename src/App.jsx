@@ -14,7 +14,7 @@ function App() {
 
     setTimeout(()=>{
       setLoading(false)
-    }, )
+    }, 2000)
   },[])
   
   const [darkmode, setDarkMode] = useState(false)

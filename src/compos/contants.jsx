@@ -70,7 +70,7 @@ const Contants = ({lightmode, darkmode}) => {
                        success && <div style={{color: lightmode ? "black" : "#e0e0e0"}}  className="contacts__success--cont">Success! your message has successfully reached me.</div>
                     }
                     {
-                       !err && <div style={{color: lightmode ? "black" : "#e0e0e0"}}  className="contacts__error--cont"> Error! seems like there is something wrong... </div>
+                       err && <div style={{color: lightmode ? "black" : "#e0e0e0"}}  className="contacts__error--cont"> Error! seems like there is something wrong... </div>
                     }
                 </form>
             </div>
