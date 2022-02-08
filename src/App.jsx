@@ -7,10 +7,6 @@ import Contacts from './compos/contants';
 import Landing from './compos/Landing';
 import { useEffect, useLayoutEffect, useState } from 'react';
 import SyncLoader from "react-spinners/SyncLoader";
-import style, {ThemeProvider} from 'styled-components'
-// import {darkTheme, lightTheme} from "./themes"
-import styled from 'styled-components';
-
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -52,7 +48,7 @@ function App() {
         :  */}
 <>
       {/* <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}> */}
-        {/* <StyledApp> */}
+       
 
       <Nav 
       handledarkmode={handledarkmode} 
@@ -68,8 +64,8 @@ function App() {
       <Projects/>
        <Contacts/>
     <Footer/> 
-      {/* </StyledApp> */}
-      {/* </ThemeProvider> */}
+
+   
    
       </>
        {/* }  */}
