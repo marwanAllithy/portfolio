@@ -38,7 +38,8 @@ function App() {
         
     }, [darkmode])
   return (
-    <div className="App" style={{ overflow: "hidden"}}>
+    <div className="App" style={{ overflow: "hidden",
+               background: lightmode ? "#f7f4f3":"#171717"  }}>
        {/* {
         loading ? 
         <div className="louading__bar">
@@ -59,10 +60,19 @@ function App() {
       darkmode={darkmode} 
       lightmode={lightmode} 
       handledarkmode={handledarkmode}/>
-      <Aboutme />
-      <Skills/>
-      <Projects/>
-       <Contacts/>
+      <Aboutme 
+      
+         darkmode={darkmode} 
+         lightmode={lightmode}/>
+      <Skills
+         darkmode={darkmode} 
+         lightmode={lightmode}/>
+      <Projects
+         darkmode={darkmode} 
+         lightmode={lightmode}/>
+       <Contacts
+          darkmode={darkmode} 
+          lightmode={lightmode}/>
     <Footer/> 
 
    

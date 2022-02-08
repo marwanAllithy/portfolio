@@ -6,7 +6,7 @@ import React from 'react';
 const Project = ({img, title, para, githublink, websitelink, tools}) => {
     return (
 
-    <div class="project__wrapper">
+    <div class="project__wrapper" >
     <img src={img} class="project__img" alt=""/>
     <div class="project__wrapper--bg"></div>
     <div class="project__description">

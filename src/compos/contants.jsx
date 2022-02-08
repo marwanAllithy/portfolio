@@ -3,7 +3,7 @@ import AOS  from 'aos';
 import "aos/dist/aos.css";
 import emailjs from 'emailjs-com'
 import { useEffect, useState } from 'react';
-const Contants = () => {
+const Contants = ({lightmode, darkmode}) => {
     
     const [loading, setLoading] = useState(false)
     
@@ -18,7 +18,7 @@ const Contants = () => {
             e.target.reset();
         };
     return (
-        <section id="contact">
+        <section id="contact" style={{color: lightmode ? "black" : "#e0e0e0"}}>
             <div className="contact__section--title--cont">
                 <h2 className="contact__section--title" data-aos="fade-up">Lets <span className="blue"> Talk</span>.</h2>
             </div>
@@ -34,7 +34,7 @@ const Contants = () => {
                     <div className="contact__form--message" data-aos="fade-up" data-aos-duration="2000">
                         <textarea type="text" name='message' placeholder='Message...' required className="form__message" />
                     </div>
-                    <button className="contact__form--btn" data-aos="fade-up" data-aos-duration="3500">
+                    <button className="contact__form--btn" data-aos="fade-up" data-aos-duration="3500" style={{color: lightmode ? "#e0e0e0" :"black" }}>
                         <div className="svg-wrapper-1">
                             <div class="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -43,7 +43,7 @@ const Contants = () => {
                             </svg>
                             </div>
                         </div>
-                        <span><input type="submit" value={"Send"}  className="form__submit" ></input></span>
+                        <span><input type="submit" value={"Send"}  className="form__submit" style={{color: lightmode ? "#e0e0e0" :"black" }}></input></span>
                     </button>
                 </form>
             </div>

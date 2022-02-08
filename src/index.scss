@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;padding: 0;
   font-family: 'Open Sans', sans-serif;
+  
 }
 $sec:#f7f4f3;
 $secbg:#e0e0e0;
@@ -90,7 +91,7 @@ li{
   background-color: $pri;
 }
 .hover-effect--dark:after {
-  background-color: $sec;
+  background-color: white;
 }
 .hover-effect--white:hover:after {
   left: 0;
@@ -100,7 +101,7 @@ li{
 .hover-effect--dark:hover:after {
   left: 0;
   width: 100%;
-  background-color: $sec;
+  background-color: #e0e0e0;
 }
 section:nth-child(odd){
   background: $secbg;
@@ -262,12 +263,28 @@ LANDINGGG
       .landing__link--list{
         display: flex;
         gap: 5px;
+        
+        .landing__link--cont{
+          margin-top: 16px;
+          display: flex;
 
+        }
+        
         .landing__link{
+        
           
           .landing__link--anchor{
-            font-size: 1.8rem;
-            color:$fontcolor;
+            padding: 6px;
+            width: 42px;
+            height: 42px;
+            background: $blue;
+            font-size: 2rem;
+            margin-right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color:$fontcolor; 
           }
         }
       }
@@ -324,7 +341,7 @@ LANDINGGG
         margin-top: .6rem;
         margin-left: .43rem;
         display: flex;  
-        animation: 1s scroll ease-in-out infinite alternate-reverse backwards;
+        animation: 2s scroll ease-in-out infinite alternate-reverse backwards;
       }
     }
     @keyframes scroll{
@@ -376,8 +393,6 @@ ABOUT ME
           justify-content: center;
           align-items: center;
           display: flex;
-          background: linear-gradient(225deg, #cacaca, #f0f0f0);
-          box-shadow:  -36px 36px 72px #5c5c5c,36px -36px 72px #ffffff;
         }
       }
     }
@@ -441,19 +456,8 @@ SKILLS
   }
 }
 
- .tech__item{
-  box-shadow:  -5px 5px 34px #cacaca,
-  5px -5px 34px #f6f6f6;
-
-  
-}
-.tech__item{
-  box-shadow:  -5px 5px 34px #cacaca,
-  5px -5px 34px #f6f6f6; 
-   
 
 
-}
 
 .tech__item--cont:hover{
   .tech__item--img--cont{
