@@ -125,27 +125,7 @@ clickssssssssssssssssss
 animationsss
 
 */
-@keyframes fadeup{
-  0%{
-    opacity: 0;
-    top: -55%;
-  }
-  100%{
-    opacity: 1;
-    top: 0%;
-  }
-}
-@keyframes pop{
-  0%{
-    scale: 0;
-  }
-  50%{
-    scale: 1.2;
-  }
-  100%{
-    scale: 1;
-  }
-}
+
 /* 
 
 NAV BARRRRRR
@@ -163,6 +143,7 @@ NAV BARRRRRR
   .nav__logo{
     width: 50px;
     height: 50px;
+
   }
   .adjust{
     font-size: 1.2rem;
@@ -174,6 +155,7 @@ NAV BARRRRRR
     font-weight: 700;
     font-size: 1.2rem;
     padding: 1rem;
+    animation: 2s fadeup  ease-in-out;
     .adjust--anchor{
       font-size: 20px;
     }
@@ -273,7 +255,21 @@ LANDINGGG
         .landing__link{
         
           
-          .landing__link--anchor{
+          .landing__link--anchor--pink{
+            padding: 6px;
+            width: 42px;
+            height: 42px;
+            background: $pink;
+            font-size: 2rem;
+            margin-right: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color:$fontcolor; 
+            
+          }
+          .landing__link--anchor--blue{
             padding: 6px;
             width: 42px;
             height: 42px;
@@ -285,6 +281,7 @@ LANDINGGG
             align-items: center;
             border-radius: 50%;
             color:$fontcolor; 
+          
           }
         }
       }
@@ -660,6 +657,7 @@ contact
   .contact__form--cont{
     justify-content: center;display: flex;
     .contact__form{
+      overflow: hidden;
       box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
       margin: .5rem auto;
       border-radius: 12px;
@@ -718,6 +716,7 @@ contact
           height: 300px;
         }
       }
+    
       .contact__form--btn{
         .form__submit{
           border: solid black 1px;
@@ -738,7 +737,7 @@ contact
         background: $blue;
         color: $fontcolor;
         padding: .8rem;
-        padding-left: 0.9em;
+        padding-left: 0.4em;
         display: flex;
         align-items: center;
         border: none;
@@ -790,6 +789,25 @@ contact
  
     }
   }
+}
+.contacts__success--cont{
+  justify-content: center;display: flex;
+  background-color: rgb(3, 212, 3);
+  margin-top: 1rem;
+  width: 120%;
+  margin-left: -4rem;
+  padding: 4px;
+  margin-bottom: -.6rem;
+
+}
+.contacts__error--cont{
+  justify-content: center;display: flex;
+  background-color: rgb(206, 5, 5);
+  margin-top: 1rem;
+  width: 120%;
+  margin-left: -4rem;
+  padding: 4px;
+  margin-bottom: -.6rem;
 }
 /*
 

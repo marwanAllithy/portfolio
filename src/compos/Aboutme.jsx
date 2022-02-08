@@ -13,7 +13,7 @@ const Aboutme = ({lightmode, darkmode}) => {
            </div>
            <div className="aboutme__cont"style={{color: lightmode ? "black" : "#e0e0e0"}} >
                <div className="aboutme__pic--cont"data-aos="fade-up">
-                   <figure className="aboutme__pic--wrapper click" style={{boxShadow : lightmode ? "-36px 36px 72px #5c5c5c,36px -36px 72px #ffffff" : "-36px 36px 72px #000000 ,36px -36px 72px#1d1d1d", borderRadius: "50%"}}>
+                   <figure className="aboutme__pic--wrapper " style={{boxShadow : lightmode ? "-36px 36px 72px #5c5c5c,36px -36px 72px #ffffff" : "-36px 36px 72px #000000 ,36px -36px 72px#1d1d1d", borderRadius: "50%"}}>
                        <img src={portpic} alt="" className="aboutme__pic" />   
                     </figure>   
                </div>

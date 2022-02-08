@@ -14,16 +14,13 @@ function App() {
 
     setTimeout(()=>{
       setLoading(false)
-    }, 2000)
+    }, )
   },[])
   
-  const [darkmode, setDarkMode] = useState("dark")
-  const [lightmode, setLightmode] = useState("light")
-  const [theme, setTheme] = useState("light")
+  const [darkmode, setDarkMode] = useState(false)
+  const [lightmode, setLightmode] = useState(true)
 
-  const themeToggler = () => {
-    theme === 'light' ?  setTheme('dark') : setTheme("light")
-  }
+ 
 
   const handleLightmode = () => {
     setLightmode(true)
@@ -40,15 +37,14 @@ function App() {
   return (
     <div className="App" style={{ overflow: "hidden",
                background: lightmode ? "#f7f4f3":"#171717"  }}>
-       {/* {
+        {
         loading ? 
         <div className="louading__bar">
       
       <h2 className="loading__welcome"><SyncLoader color={"#574AE2"} loading={loading}  height={5} width={"100%"}/></h2>
         </div>
-        :  */}
+        :
 <>
-      {/* <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}> */}
        
 
       <Nav 
@@ -61,7 +57,6 @@ function App() {
       lightmode={lightmode} 
       handledarkmode={handledarkmode}/>
       <Aboutme 
-      
          darkmode={darkmode} 
          lightmode={lightmode}/>
       <Skills
@@ -78,7 +73,7 @@ function App() {
    
    
       </>
-       {/* }  */}
+        }  
 
     </div>
   );

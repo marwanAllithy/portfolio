@@ -2,20 +2,33 @@ import React from 'react';
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 import emailjs from 'emailjs-com'
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
+import ClipLoader from "react-spinners/ClipLoader";
+
+
 const Contants = ({lightmode, darkmode}) => {
     
     const [loading, setLoading] = useState(false)
-    
+    const [err, setErr] = useState(false);
+    const [success, setSuccess] = useState(false);
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true)
+
         emailjs.sendForm('service_yfl4yvh', 'template_0initsy', e.target, 'user_Haw7geORIGqUyOapjh7SU')
         .then((result) => {
-            console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-            }).catch(err=> console.log(err))
+
+            setSuccess(true)
+        }, (error) => {
+            
+            setErr(true)
+            setSuccess(false)
+        }).catch()
+        
             e.target.reset();
+            setLoading(false)
+           
+            
         };
     return (
         <section id="contact" style={{color: lightmode ? "black" : "#e0e0e0"}}>
@@ -34,8 +47,14 @@ const Contants = ({lightmode, darkmode}) => {
                     <div className="contact__form--message" data-aos="fade-up" data-aos-duration="2000">
                         <textarea type="text" name='message' placeholder='Message...' required className="form__message" />
                     </div>
+                    {
+                    
+                    loading ? <div className="contact__form--laoding-bar--cont contact__form--btn">
+                        <ClipLoader size={45}  color={lightmode ? "#e0e0e0" : "black" } className="contact__form--laoding-bar"/>
+                        </div> 
+                    :
                     <button className="contact__form--btn" data-aos="fade-up" data-aos-duration="3500" style={{color: lightmode ? "#e0e0e0" :"black" }}>
-                        <div className="svg-wrapper-1">
+                        <> <div className="svg-wrapper-1">
                             <div class="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
@@ -43,8 +62,16 @@ const Contants = ({lightmode, darkmode}) => {
                             </svg>
                             </div>
                         </div>
-                        <span><input type="submit" value={"Send"}  className="form__submit" style={{color: lightmode ? "#e0e0e0" :"black" }}></input></span>
+                        <span><input type="submit" value={"Send"}  className="form__submit" style={{color: lightmode ? "#e0e0e0" :"black" }}></input></span> </>
                     </button>
+                    
+                    }
+                    {
+                       success && <div style={{color: lightmode ? "black" : "#e0e0e0"}}  className="contacts__success--cont">Success! your message has successfully reached me.</div>
+                    }
+                    {
+                       !err && <div style={{color: lightmode ? "black" : "#e0e0e0"}}  className="contacts__error--cont"> Error! seems like there is something wrong... </div>
+                    }
                 </form>
             </div>
         </section>

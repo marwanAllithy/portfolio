@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import {  faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import resume from '../assets/my-resume.docx'
 import React, { useEffect, useState } from 'react';
@@ -34,7 +34,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                             <ul className="landing__link--list">
                                 <li className="landing__link click ">
                                 <div className="landing__link--cont">
-                                    <a  href="https://www.linkedin.com/in/marwan-allisy-067838224/" target="_blank"style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor">
+                                    <a  href="https://www.linkedin.com/in/marwan-allisy-067838224/" target="_blank"style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor--blue">
                                         <FontAwesomeIcon icon={faLinkedin}/>
                                     </a>
                                 </div>
@@ -42,7 +42,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                                 <li className="landing__link click">
                                 <div className="landing__link--cont">
 
-                                    <a href="https://github.com/OZY3112" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor">
+                                    <a href="https://github.com/OZY3112" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor--pink">
                                         <FontAwesomeIcon  icon={faGithub}/>
                                     </a>
                                 </div>
@@ -50,7 +50,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                                 <li className="landing__link click">
                                     <div className="landing__link--cont">
 
-                                    <a href={resume} className="landing__link--anchor " style={{color: lightmode ? "black" : "#e0e0e0"}} target="_blank">
+                                    <a href={resume} className="landing__link--anchor--blue" style={{color: lightmode ? "black" : "#e0e0e0"}} target="_blank--">
                                         <FontAwesomeIcon icon={faFilePdf}/>
                                     </a>
                                     </div>
