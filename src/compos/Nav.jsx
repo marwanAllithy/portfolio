@@ -17,7 +17,10 @@ const Nav = ({handledarkmode, handleLightmode, darkmode, lightmode}) => {
                
                 {
                     <li className={`nav__link hover-effect hover-effect--${lightmode ?"white" : "dark" }`} >
-                        <button style={{color: lightmode ? "black" : "e0e0e0"}} className="nav__link--anchor click adjust" style={{color: lightmode ? "black" : "#e0e0e0"}}  onClick={lightmode ? (handledarkmode) : (handleLightmode)}>
+                        <button 
+                        style={{color: lightmode ? "black" : "e0e0e0"}}
+                         className="nav__link--anchor click adjust" 
+                         onClick={lightmode ? (handledarkmode) : (handleLightmode)}>
                             <FontAwesomeIcon icon={faAdjust} />
                         </button>
                     </li>
