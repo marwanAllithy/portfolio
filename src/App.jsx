@@ -6,16 +6,10 @@ import Skills from './compos/Skills';
 import Contacts from './compos/contants';
 import Landing from './compos/Landing';
 import {  useLayoutEffect, useState } from 'react';
-import SyncLoader from "react-spinners/SyncLoader";
+
 
 function App() {
-  const [loading, setLoading] = useState(true)
-  useLayoutEffect(()=>{
-
-    setTimeout(()=>{
-      setLoading(false)
-    }, 2000)
-  },[])
+  
   
   const [darkmode, setDarkMode] = useState(false)
   const [lightmode, setLightmode] = useState(true)
