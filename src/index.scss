@@ -909,6 +909,33 @@ FOOTER
     }
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
-@media (max-width: 550px) {
- 
+@media (max-width: 450px) {
+ .skills{
+   display: flex;
+   flex-direction: column;
+ }
+ .tech__item--cont{
+   width: 100%;
+ }
+ .contact__form{
+   width: 100vw !important;
+   margin: 0;
+ }
+ .form__name{
+   width: 80vw !important;
+   margin: 0;
+ }
+ .form__email{
+  width: 80vw ;
+  margin-left: -3rem !important;
+  margin: 0 !important;
+
+ }
+ .form__message{
+  width: 80vw !important;
+  margin: 0;
+ }
+ .nav__link{
+   font-size: .9rem;
+ }
 }

@@ -37,14 +37,7 @@ function App() {
   return (
     <div className="App" style={{ overflow: "hidden",
                background: lightmode ? "#f7f4f3":"#171717"  }}>
-        {
-        loading ? 
-        <div className="louading__bar">
-      
-      <h2 className="loading__welcome"><SyncLoader color={"#574AE2"} loading={loading}  height={5} width={"100%"}/></h2>
-        </div>
-        :
-<>
+    
        
 
       <Nav 
@@ -70,10 +63,6 @@ function App() {
           lightmode={lightmode}/>
     <Footer/> 
 
-   
-   
-      </>
-        }  
 
     </div>
   );

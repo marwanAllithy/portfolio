@@ -21,8 +21,8 @@ const Nav = ({handledarkmode, handleLightmode, darkmode, lightmode}) => {
                         style={{color: lightmode ? "black" : "e0e0e0"}}
                          className="nav__link--anchor click adjust" 
                          onClick={lightmode ? (handledarkmode) : (handleLightmode)}>
-                            <FontAwesomeIcon icon={faAdjust} />
-                        </button>
+                            <FontAwesomeIcon icon={faAdjust}  style={{color: lightmode ? "black" : "e0e0e0"}} />
+                        </button >
                     </li>
                 }
             </ul>
