@@ -10,7 +10,7 @@ const Footer = () => {
                 <ul className="footer__link--list">
                     <li className="footer__link hover-effect hover-effect--dark"><a href="#aboutme" className="footer__link--anchor">About Me</a></li>
                     <li className="footer__link hover-effect hover-effect--dark"><a href="#skills" className="footer__link--anchor">Skills</a></li>
-                    <li className="footer__link hover-effect hover-effect--dark"><a href="#projects" className="footer__link--anchor">Porjects</a></li>
+                    <li className="footer__link hover-effect hover-effect--dark"><a href="#projects" className="footer__link--anchor">Projects</a></li>
                     <li className="footer__link hover-effect hover-effect--dark"><a href="#contact" className="footer__link--anchor">Contact Me</a></li>
                 </ul>
                 <div className="footer__copy-right">Copyright &copy; 2022 Marwan Allisy</div>
