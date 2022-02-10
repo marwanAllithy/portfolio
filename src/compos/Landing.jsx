@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {  faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import resume from '../assets/my-resume.docx'
+import resume from '../assets/my-resume.pdf'
 import React, { useEffect, useState } from 'react';
 import Lightastro from './ui/Lightastro'
 import Darkastro from './ui/darkastro'
