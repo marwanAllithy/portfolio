@@ -29,7 +29,7 @@ const Aboutme = ({lightmode, darkmode}) => {
                            <br /><br />
                            Currently, A <span className="pink"> High school student </span> from 
                            <span className="blue"> Egypt</span>, learning all I can about Web Development, tutoring and building client's projects.
-                           and a private programming <span className="blue"> Tutor</span>.
+                           And a private programming <span className="blue"> Tutor</span>.
                        </p>
                    </div>
                </div>
