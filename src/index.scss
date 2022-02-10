@@ -914,6 +914,25 @@ FOOTER
    display: flex;
    flex-direction: column;
  }
+ .landing__discription--title{
+  font-size: 3.1rem !important;
+}
+.landing__astro{
+  display: none !important;
+}
+.landing__link--anchor--blue, .landing__link--anchor--pink{
+  font-size: 1rem !important;
+  padding: 6px;
+  width: 32px !important;
+  height: 32px !important;
+  background: $blue;
+ 
+  margin-right: 12px;
+}
+.landing__discription--para{
+  font-size: 1.5rem !important;
+  max-width: 90% !important;
+}
  .tech__item--cont{
    width: 100%;
  }
@@ -936,6 +955,33 @@ FOOTER
   margin: 0;
  }
  .nav__link{
-   font-size: .9rem;
+   font-size: .7rem;
  }
+
+ .aboutme__pic--cont{
+   width: 40% !important;
+   height: 40% !important;
+   margin: 0 auto !important;
+   margin-top: 3rem !important;
+ }
+ .project__description{
+  margin-top: -4rem;
+  margin-left: -4rem;
+}
+.project__description--title{
+  font-size: 1.3rem;
+}
+.project__description--sub-title{
+  font-size: .7rem;
+}
+.project__description--para{
+  font-size: 1rem;
+}
+.project__wrapper{
+  width: 100% !important;
+  height: 100% !important;
+}
+.contact__form--email{
+  margin-left: 1rem !important;
+}
 }

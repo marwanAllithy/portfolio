@@ -42,7 +42,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                                 <li className="landing__link click">
                                 <div className="landing__link--cont">
 
-                                    <a href="https://github.com/OZY3112" rel="noopener noreferrer" style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor--pink">
+                                    <a href="https://github.com/OZY3112" rel="noopen noreferrer" style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor--pink">
                                         <FontAwesomeIcon  icon={faGithub}/>
                                     </a>
                                 </div>
