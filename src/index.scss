@@ -860,7 +860,7 @@ FOOTER
 
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   
     .landing__discription--cont{
      margin-left: 1rem;
@@ -908,18 +908,24 @@ FOOTER
     .nav__logo{
       width: 150px;
     }
+    
+    .landing__astro{
+      display: none !important;
+    }
+    .projects__cont{
+      margin: 0 auto;
+
+    }
+    
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
-@media (max-width: 450px) {
+@media (max-width: 600px) {
  .skills{
    display: flex;
    flex-direction: column;
  }
  .landing__discription--title{
   font-size: 3.1rem !important;
-}
-.landing__astro{
-  display: none !important;
 }
 .landing__link--anchor--blue, .landing__link--anchor--pink{
   font-size: 1rem !important;
@@ -935,7 +941,13 @@ FOOTER
   max-width: 90% !important;
 }
  .tech__item--cont{
+   margin: 0 auto !important;
    width: 100%;
+ }
+ .skills{
+   width: 100%;
+   display: flex !important;
+   flex-wrap: wrap !important;
  }
  .contact__form{
    width: 100vw !important;
@@ -944,6 +956,13 @@ FOOTER
  .form__name{
    width: 80vw !important;
    margin: 0;
+ }
+ #landing{
+   height:100vh;
+   
+ }
+ .landing__scroll--cont{
+   margin-bottom: -20rem;
  }
  .form__email{
   width: 80vw ;
