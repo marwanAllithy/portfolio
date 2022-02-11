@@ -50,7 +50,7 @@ const Contants = ({lightmode, darkmode}) => {
                     {
                     
                     loading ? <div className="contact__form--laoding-bar--cont contact__form--btn">
-                        <ClipLoader size={45}  color={lightmode ? "#e0e0e0" : "black" } className="contact__form--laoding-bar"/>
+                        <ClipLoader size={25}  color={lightmode ? "#e0e0e0" : "black" } className="contact__form--laoding-bar"/>
                         </div> 
                     :
                     <button className="contact__form--btn" data-aos="fade-up" data-aos-duration="3500" style={{color: lightmode ? "#e0e0e0" :"black" }}>
