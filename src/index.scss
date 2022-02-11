@@ -16,6 +16,7 @@ body{
   background: $sec;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  transition: 300ms;
 }
 html{
   scroll-behavior: smooth;

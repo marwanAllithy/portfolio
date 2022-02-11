@@ -21,7 +21,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
         <section id="landing">
             
             <div className="landing__discription--cont" >
-                <div className="landing__discription" style={{color: lightmode ? "black" : "#e0e0e0"}} >
+                <div className="landing__discription" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} >
                     <h1 className="landing__discription--title" style={{transform : `translateY(${offsetY * 0.27}px)`,}}>
                         Hello, I'm <span className="blue">Marwan Allisy</span>.
                     </h1>
@@ -34,7 +34,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                             <ul className="landing__link--list">
                                 <li className="landing__link click ">
                                 <div className="landing__link--cont">
-                                    <a  href="https://www.linkedin.com/in/marwan-allisy-067838224/"rel="noopener noreferrer"  target="_blank" style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor--blue">
+                                    <a  href="https://www.linkedin.com/in/marwan-allisy-067838224/"rel="noopener noreferrer"  target="_blank" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} className="landing__link--anchor--blue">
                                         <FontAwesomeIcon icon={faLinkedin}/>
                                     </a>
                                 </div>
@@ -42,7 +42,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                                 <li className="landing__link click">
                                 <div className="landing__link--cont">
 
-                                    <a href="https://github.com/OZY3112"  rel="noreferrer noopener" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0"}} className="landing__link--anchor--pink">
+                                    <a href="https://github.com/OZY3112"  rel="noreferrer noopener" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} className="landing__link--anchor--pink">
                                         <FontAwesomeIcon  icon={faGithub}/>
                                     </a>
                                 </div>
@@ -50,7 +50,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                                 <li className="landing__link click">
                                     <div className="landing__link--cont">
 
-                                    <a href={resume} className="landing__link--anchor--blue" style={{color: lightmode ? "black" : "#e0e0e0"}}  rel="noreferrer noopener" target="_blank">
+                                    <a href={resume} className="landing__link--anchor--blue" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}}  rel="noreferrer noopener" target="_blank">
                                         <FontAwesomeIcon icon={faFilePdf}/>
                                     </a>
                                     </div>
@@ -59,8 +59,8 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                         </div>
                     </div>
             <div className="landing__scroll--cont "  style={{transform : `translateY(${offsetY * 0.00000}px)`}}>
-                <a  href="#aboutme" className="landing__scroll click " style={{border: lightmode ? "3px solid black" : "3px solid white" }}   >
-                    <div className="landing__scroll--dot" style={{border: lightmode ? "3px solid black" : "3px solid white" ,background: lightmode ? "black" : "white"}}  ></div>
+                <a  href="#aboutme" className="landing__scroll click " style={{border: lightmode ? "3px solid black" : "3px solid white" ,transition: "300ms"}}   >
+                    <div className="landing__scroll--dot" style={{border: lightmode ? "3px solid black" : "3px solid white" ,background: lightmode ? "black" : "white",transition: "300ms"}}  ></div>
                 </a>
             </div>
                 </div>

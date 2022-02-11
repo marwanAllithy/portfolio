@@ -30,7 +30,7 @@ function App() {
     }, [darkmode])
   return (
     <div className="App" style={{ overflow: "hidden",
-               background: lightmode ? "#f7f4f3":"#171717"  }}>
+               background: lightmode ? "#f7f4f3":"#171717"  ,transition: "300ms"}}>
     
        
 
