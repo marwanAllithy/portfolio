@@ -555,13 +555,13 @@ porject
       margin: 0 auto;
     }
   }
-  .projects__wrapper{
-    width: 80vw;
-    margin: 0 auto;
-    .projects__cont{
-      .project__cont{
-        width: 100%;
-      }
+}
+.projects__wrapper{
+  width: 80vw;
+  margin: 0 auto;
+  .projects__cont{
+    .project__cont{
+      width: 100%;
     }
   }
 }
@@ -592,6 +592,7 @@ porject
 
 .project__img {
   width: 100%;
+  margin-bottom: -1rem;
   transition: all 600ms ease;
 }
 
@@ -978,6 +979,7 @@ FOOTER
 .landing__discription--para{
   font-size: 1.5rem !important;
   max-width: 90% !important;
+  
 }
  .tech__item--cont{
    margin: 0 auto !important;
@@ -1038,13 +1040,14 @@ FOOTER
   margin-left: -4rem;
 }
 .project__description--title{
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 .project__description--sub-title{
-  font-size: .7rem;
+  font-size: .8rem;
 }
 .project__description--para{
   font-size: 1rem;
+  display: none;
 }
 .project__wrapper{
   width: 100vw !important;
