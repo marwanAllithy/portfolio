@@ -31,9 +31,6 @@ function App() {
   return (
     <div className="App" style={{ overflow: "hidden",
                background: lightmode ? "#f7f4f3":"#171717"  ,transition: "300ms"}}>
-    
-       
-
       <Nav 
       handledarkmode={handledarkmode} 
       handleLightmode={handleLightmode}
@@ -56,8 +53,6 @@ function App() {
           darkmode={darkmode} 
           lightmode={lightmode}/>
     <Footer/> 
-
-
     </div>
   );
 }

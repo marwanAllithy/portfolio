@@ -546,7 +546,7 @@ porject
 
 }
 #projects{
-  padding:  3rem 0px ;
+  padding:  3rem ;
   .porject__title--cont{
     justify-content: center;display: flex;
     width: 100%;
@@ -595,20 +595,38 @@ porject
   margin-bottom: -1rem;
   transition: all 600ms ease;
 }
-
 .project__wrapper {
   position: relative;
   border-radius: 20px;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
-  margin: 1rem;
   overflow: hidden;
 }
-.section__title {
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 60px;
+
+.project__wrapper:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
 }
 
+.project__wrapper:hover .project__img {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
+.project__description {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
+  color: white;
+  max-width: 550px;
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+  opacity: 0.7; 
+  visibility: visible;
+}
 
 .project__wrapper--bg {
   position: absolute;
@@ -631,16 +649,13 @@ porject
 }
 
 .project__description--link {
-  color:white;
+  color: white;
   font-size: 20px;
   margin-right: 16px;
 }
 
 .project__description--para {
   margin: 16px 0;
-}
-.project__wrapper:hover .project__description{
-  opacity: 1;
 }
 /*
 
@@ -897,6 +912,7 @@ FOOTER
   }
   
   
+  
     .landing__discription--cont{
      margin-left: 1rem;
     }
@@ -928,21 +944,7 @@ FOOTER
     .aboutme__description--para{
       margin: 0 auto;
     }
-    .project__description{
-      margin-top: -4rem;
-    }
-    .project__description--title{
-      font-size: 2.3rem;
-    }
-    .project__description--sub-title{
-      font-size: 1rem;
-    }
-    .project__description--para{
-      font-size: 1rem;
-    }
-    .projects__wrapper{
-      width: 100vw !important;
-    }
+    
     .nav__logo{
       width: 150px;
     }
@@ -950,14 +952,7 @@ FOOTER
     .landing__astro{
       display: none !important;
     }
-    .projects__cont{
-      margin: 0 auto;
-
-    }
-    .project__cont{
-      margin: 0;
-      width: 95vw !important;
-    }
+ 
     
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
@@ -1002,9 +997,10 @@ FOOTER
    height:100vh;
    
  }
- .landing__scroll--cont{
-   margin-bottom: -20rem;
+ .project__description--para{
+   display: none;
  }
+
  .form__email{
   width: 80vw ;
   margin-left: -3rem !important;
@@ -1035,24 +1031,7 @@ FOOTER
    width: 100% !important;
    height: 100% !important;
  }
- .project__description{
-  margin-top: -4rem;
-  margin-left: -4rem;
-}
-.project__description--title{
-  font-size: 1.8rem;
-}
-.project__description--sub-title{
-  font-size: .8rem;
-}
-.project__description--para{
-  font-size: 1rem;
-  display: none;
-}
-.project__wrapper{
-  width: 100vw !important;
-  height: 100% !important;
-}
+ 
 .contact__form--email{
   margin-left: 1rem !important;
 }
