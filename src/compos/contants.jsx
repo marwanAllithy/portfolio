@@ -39,13 +39,13 @@ const Contants = ({lightmode, darkmode}) => {
                 <form onSubmit={sendEmail} className="contact__form">
                     
                     <div className="contact__form--name" data-aos="fade-up" data-aos-duration="1000">
-                        <input type="text" className="form__name" placeholder='Name...' required name='name' />
+                        <input type="text" className="form__name" placeholder='Name...' required name='name'style={{color: lightmode ? "black" : "#e0e0e0", background:lightmode ?  "#e0e0e0" :"#0f0f0f", border: darkmode && "solid 1px white"}} />
                     </div>
                     <div className="contact__form--email" data-aos="fade-up" data-aos-duration="1500">
-                        <input type="email" name='email' placeholder='E-mail...' required className="form__email" />
+                        <input type="email" name='email' placeholder='E-mail...' required className="form__email"style={{color: lightmode ? "black" : "#e0e0e0", background:lightmode ?  "#e0e0e0" :"#0f0f0f" , border: darkmode && "solid 1px white"}} />
                     </div>
                     <div className="contact__form--message" data-aos="fade-up" data-aos-duration="2000">
-                        <textarea type="text" name='message' placeholder='Message...' required className="form__message" />
+                        <textarea type="text" name='message' placeholder='Message...' required className="form__message"style={{color: lightmode ? "black" : "#e0e0e0" ,background:lightmode ?  "#e0e0e0" :"#0f0f0f", border: darkmode && "solid 1px white"}} />
                     </div>
                     {
                     
