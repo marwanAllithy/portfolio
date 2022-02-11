@@ -58,7 +58,7 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                             </ul>
                         </div>
                     </div>
-            <div className="landing__scroll--cont "  style={{transform : `translateY(${offsetY * 0.00000}px)`}}>
+            <div className="landing__scroll--cont hidden "  style={{transform : `translateY(${offsetY * 0.00000}px)`}}>
                 <a  href="#aboutme" className="landing__scroll click " style={{border: lightmode ? "3px solid black" : "3px solid white" ,transition: "300ms"}}   >
                     <div className="landing__scroll--dot" style={{border: lightmode ? "3px solid black" : "3px solid white" ,background: lightmode ? "black" : "white",transition: "300ms"}}  ></div>
                 </a>

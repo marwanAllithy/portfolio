@@ -546,7 +546,7 @@ porject
 
 }
 #projects{
-  padding: 3rem;
+  padding:  3rem 0px ;
   .porject__title--cont{
     justify-content: center;display: flex;
     width: 100%;
@@ -862,6 +862,39 @@ FOOTER
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 800px) {
+  .tech__item--cont{
+    width: 33.3%;
+    display: flex;
+    .tech__item{
+      width: 120px;
+      height: 120px;
+      border-radius: 18px;
+      transition: 300ms;
+      margin: 1.5rem;
+      .tech__item--img--cont{
+        margin-top: 8px;
+        width: 100%;
+        transition: 300ms;
+        .tech__item--img{
+          margin: 0 auto;
+          display: flex;
+          max-height: 60px;
+          max-width: 100%;
+        }
+      }
+      .tech__item--name--cont{
+        opacity: 1  ;
+        .tech__item--name{
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 600;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  
   
     .landing__discription--cont{
      margin-left: 1rem;
@@ -881,11 +914,11 @@ FOOTER
       width: 100vw;
     }
       .skill__Proficient--cont{
-        width: 80vw !important;
+        width: 100vw !important;
         margin: 0 auto;
       }
       .skill__Familiar--cont{
-        width: 80vw !important;
+        width: 100vw !important;
         margin: 0 auto !important;
       }
     .skill__Proficient{
@@ -906,6 +939,9 @@ FOOTER
     .project__description--para{
       font-size: 1rem;
     }
+    .projects__wrapper{
+      width: 100vw !important;
+    }
     .nav__logo{
       width: 150px;
     }
@@ -917,14 +953,16 @@ FOOTER
       margin: 0 auto;
 
     }
+    .project__cont{
+      margin: 0;
+      width: 100vw !important;
+    }
     
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 600px) {
- .skills{
-   display: flex;
-   flex-direction: column;
- }
+ 
+ 
  .landing__discription--title{
   font-size: 3.1rem !important;
 }
@@ -978,12 +1016,22 @@ FOOTER
  .nav__link{
    font-size: .7rem;
  }
+.hidden{
+  display: none !important;
+}
+ .adjust{
+   display: flex !important;
+ }
 
  .aboutme__pic--cont{
-   width: 40% !important;
-   height: 40% !important;
+   width: 90% !important;
+   height: 90% !important;
    margin: 0 auto !important;
    margin-top: 3rem !important;
+ }
+ .aboutme__pic{
+   width: 100% !important;
+   height: 100% !important;
  }
  .project__description{
   margin-top: -4rem;
@@ -999,7 +1047,7 @@ FOOTER
   font-size: 1rem;
 }
 .project__wrapper{
-  width: 100% !important;
+  width: 100vw !important;
   height: 100% !important;
 }
 .contact__form--email{
