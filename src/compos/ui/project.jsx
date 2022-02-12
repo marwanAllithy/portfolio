@@ -21,8 +21,8 @@ const Project = ({img, title, para, githublink, websitelink, tools}) => {
     {para}
     </p>
     <div class="project__description--links">
-    <a href={githublink} rel="noopener noreferrer" className="project__description--link"><FontAwesomeIcon icon={faGithub}/></a>
-        <a href={websitelink} rel="noopener noreferrer" className="project__description--link"><FontAwesomeIcon icon={faLink}/></a>
+    <a href={githublink} rel="noreferrer noopener" target="_blank" className="project__description--link"><FontAwesomeIcon icon={faGithub}/></a>
+        <a href={websitelink} rel="noreferrer noopener" target="_blank" className="project__description--link"><FontAwesomeIcon icon={faLink}/></a>
     </div>
   </div>
 </div>
