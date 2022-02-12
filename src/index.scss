@@ -420,7 +420,7 @@ SKILLS
 */
 
 .tech__item--cont{
-  width: 33.3%;
+  min-width: 33.3%;
   display: flex;
   .tech__item{
     width: 120px;
@@ -880,39 +880,7 @@ FOOTER
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 800px) {
-  .tech__item--cont{
-    width: 33.3%;
-    display: flex;
-    .tech__item{
-      width: 120px;
-      height: 120px;
-      border-radius: 18px;
-      transition: 300ms;
-      margin: 1.5rem;
-      .tech__item--img--cont{
-        margin-top: 8px;
-        width: 100%;
-        transition: 300ms;
-        .tech__item--img{
-          margin: 0 auto;
-          display: flex;
-          max-height: 60px;
-          max-width: 100%;
-        }
-      }
-      .tech__item--name--cont{
-        opacity: 1  ;
-        .tech__item--name{
-        width: 100%;
-        font-size: 1.2rem;
-        font-weight: 600;
-          display: flex;
-          justify-content: center;
-        }
-      }
-    }
-  }
-  
+
   
   
     .landing__discription--cont{
@@ -982,11 +950,7 @@ FOOTER
    margin: 0 auto !important;
    width: 100%;
  }
- .skills{
-   width: 100%;
-   display: flex !important;
-   flex-wrap: wrap !important;
- }
+
  .contact__form{
    width: 100vw !important;
    margin: 0;
