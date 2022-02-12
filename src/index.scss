@@ -899,8 +899,15 @@ FOOTER
     }
     .skills__skill--cont{
       flex-direction: column;
-      width: 100vw;
     }
+    .skills{
+      
+     
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+    }
+    
       .skill__Proficient--cont{
         width: 100vw !important;
         margin: 0 auto;
@@ -929,7 +936,12 @@ FOOTER
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 600px) {
  
- 
+  .skills{
+     
+    left: 50%;
+    position: relative;
+    transform: translateX(-25%);
+  }
  .landing__discription--title{
   font-size: 3.1rem !important;
 }
