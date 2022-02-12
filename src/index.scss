@@ -423,7 +423,7 @@ SKILLS
   min-width: 33.3%;
   display: flex;
   .tech__item{
-    width: 120px;
+    width: 110px;
     height: 120px;
     border-radius: 18px;
     transition: 300ms;
@@ -494,9 +494,10 @@ SKILLS
     .skills__skill--cont{
       display: flex;
       margin: 0 auto;
+      width: 100vw;
       justify-content: center;
     .skill__Proficient--cont{
-      width: 30vw;
+      width: 33vw;
       .skill__Proficient{
       border-right: solid 1px ;
 
