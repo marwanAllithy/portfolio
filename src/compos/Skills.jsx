@@ -32,11 +32,11 @@ const Skills = ({lightmode, darkmode}) => {
                         </div>
                         <div className="skills__cont"data-aos="fade-up" >
                         <div className="skills">
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React" techimg={react} />
-                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="200" techname="JavaScript" techimg={JS}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="400" techname="HTML" techimg={html}/>
+                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="200" techname="JavaScript" techimg={JS}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="700" techname="CSS" techimg={css}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="100" techname="SASS" techimg={sass}/>
+                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React" techimg={react} />
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Node.js" techimg={Node}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Firebase" techimg={firebase}/>
                             
