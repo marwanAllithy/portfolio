@@ -881,8 +881,12 @@ FOOTER
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 800px) {
-
-  
+.footer__link--list{
+  display: none !important;
+}
+  .tech__item--name--cont{
+    opacity: 1 !important;
+  }
   
     .landing__discription--cont{
      margin-left: 1rem;
@@ -919,9 +923,7 @@ FOOTER
     .skill__Proficient{
       border: none !important;
     }
-    .aboutme__description--para{
-      margin: 0 auto;
-    }
+    
     
     .nav__logo{
       width: 150px;
@@ -930,12 +932,16 @@ FOOTER
     .landing__astro{
       display: none !important;
     }
+    
  
     
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 600px) {
- 
+  .aboutme__description--para{
+       margin-left: -1rem !important;
+  
+     }
   .skills{
      
     left: 50%;
