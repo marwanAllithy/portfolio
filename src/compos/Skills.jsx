@@ -9,6 +9,7 @@ import ts from './techimgs/typescript-icon.svg'
 import Techitem from './ui/techitem';
 import css from './techimgs/css.svg'
 import bootstrap from './techimgs/Bootstrap_logo.svg.png'
+import vite from './techimgs/vitelogo.svg'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
@@ -39,6 +40,7 @@ const Skills = ({lightmode, darkmode}) => {
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React" techimg={react} />
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Node.js" techimg={Node}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Firebase" techimg={firebase}/>
+                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Vite" techimg={vite}/>
                             
                         </div>
                     </div>
