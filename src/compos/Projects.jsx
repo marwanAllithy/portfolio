@@ -17,7 +17,7 @@ const Projects = ({lightmode, darkmode}) => {
                         para="Using best practices with Html (BEM), Css, and javaScript, while using React (+hooks) i built a fake E-library
                         and a clean UI design with a easy-to-understand layout for the website."
                         githublink="https://github.com/OZY3112/E-Commerce-library"
-                        websitelink="https://libraryozy.netlify.app/#/"
+                        websitelink="https://e-commerce-library.vercel.app/"
                         tools="HTML, CSS, JavaScript, React, Node.Js"
                         />
                     </div>
