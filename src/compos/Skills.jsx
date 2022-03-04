@@ -10,6 +10,8 @@ import Techitem from './ui/techitem';
 import css from './techimgs/css.svg'
 import bootstrap from './techimgs/Bootstrap_logo.svg.png'
 import vite from './techimgs/vitelogo.svg'
+import Mantine from './techimgs/mantine.png'
+import Tailwind from './techimgs/tailwind.png'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
@@ -37,10 +39,11 @@ const Skills = ({lightmode, darkmode}) => {
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="200" techname="JavaScript" techimg={JS}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="700" techname="CSS" techimg={css}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="100" techname="SASS" techimg={sass}/>
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React" techimg={react} />
+                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React.js" techimg={react} />
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Node.js" techimg={Node}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Firebase" techimg={firebase}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Vite" techimg={vite}/>
+                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Mantine" techimg={Mantine}/>
                             
                         </div>
                     </div>
@@ -56,6 +59,7 @@ const Skills = ({lightmode, darkmode}) => {
                     <div className="skills__cont" data-aos="fade-up">
                         <div className="skills">
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
+                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={Tailwind}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
                             
                         </div>
