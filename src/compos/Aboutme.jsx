@@ -28,7 +28,7 @@ const Aboutme = ({lightmode, darkmode}) => {
                            I love problem-solving creating solutions that could positively impact the world. 
                            <br /><br />
                            Currently, A <span className="pink"> High school student </span> from 
-                           <span className="blue"> Egypt</span>, learning all I can about Web Development, tutoring and building client's projects.
+                           <span className="blue"> Egypt</span>, learning all I can about Web Development, building client's projects.
                            And a private programming <span className="blue"> Tutor</span>.
                        </p>
                    </div>
