@@ -59,9 +59,7 @@ const Skills = ({lightmode, darkmode}) => {
                     <div className="skills__cont" data-aos="fade-up">
                         <div className="skills">
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
-                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={Tailwind}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
-                            
                         </div>
                     </div>
                     </div>
