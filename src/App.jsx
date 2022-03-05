@@ -11,8 +11,8 @@ import {  useLayoutEffect, useState } from 'react';
 function App() {
   
   
-  const [darkmode, setDarkMode] = useState(false)
-  const [lightmode, setLightmode] = useState(true)
+  const [darkmode, setDarkMode] = useState(true)
+  const [lightmode, setLightmode] = useState(false)
 
  
 

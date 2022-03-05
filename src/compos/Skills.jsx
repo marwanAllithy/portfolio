@@ -11,7 +11,6 @@ import css from './techimgs/css.svg'
 import bootstrap from './techimgs/Bootstrap_logo.svg.png'
 import vite from './techimgs/vitelogo.svg'
 import Mantine from './techimgs/mantine.png'
-import Tailwind from './techimgs/tailwind.png'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();

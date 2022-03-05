@@ -466,6 +466,7 @@ SKILLS
     scale: 1;
     opacity: 1 ;
     transform: translateY(0px);
+    font-weight: 700;
   }
 }
 
@@ -493,9 +494,9 @@ SKILLS
     }
     .skills__skill--cont{
       display: flex;
-      margin: 0 auto;
       width: 100vw;
       justify-content: center;
+      
     .skill__Proficient--cont{
       width: 33vw;
       .skill__Proficient{
@@ -511,7 +512,7 @@ SKILLS
     }
     
     .skill__Familiar--cont{
-      width: 30vw;
+      width: 33vw;
       margin-left: 1rem;
       .skill__Familiar{
         .skill--Familiar--title--cont{
@@ -907,9 +908,9 @@ FOOTER
     .skills{
       
      
-      left: 50%;
-      position: relative;
-      transform: translateX(-50%);
+      right: 25% !important;
+      position: relative !important;
+      transform: translateX(-25%) !important;
     }
     
       .skill__Proficient--cont{
@@ -923,7 +924,9 @@ FOOTER
     .skill__Proficient{
       border: none !important;
     }
-    
+    .project__description--title{
+      font-size: 1.2rem !important;
+    }
     
     .nav__logo{
       width: 150px;

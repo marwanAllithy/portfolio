@@ -18,7 +18,7 @@ const Projects = ({lightmode, darkmode}) => {
                         and a clean UI design with a easy-to-understand layout for the website."
                         githublink="https://github.com/OZY3112/E-Commerce-library"
                         websitelink="https://e-commerce-library.vercel.app/"
-                        tools="HTML, CSS, JavaScript, React, Node.Js"
+                        tools="HTML | CSS | JavaScript | React | Node.Js"
                         />
                     </div>
                 </div>
