@@ -1,4 +1,3 @@
-import React from 'react';
 import Project from './ui/project';
 import librarypic from './projectimg/library.png'
 import easyViewPic from './projectimg/easyView.png'
@@ -22,10 +21,10 @@ const Projects = ({lightmode, darkmode}) => {
                         tools="HTML | CSS | JavaScript | React | Node.Js"
                         />
                         <Project img={easyViewPic} 
-                        title="E-Commerce-library"
+                        title="Easy view"
                         para="Using the TMDB api and axios i made a website (in 3 days) where u can look for a movie name and find all of the 
                         results and also getting access to more information by click on the movie poster."
-                        githublink="https://github.com/OZY3112/E-Commerce-library"
+                        githublink="https://github.com/OZY3112/views_bata"
                         websitelink="https://easy-view.vercel.app/"
                         tools="HTML | SCSS | JavaScript | React | Vite | axios | Node.Js"
                         />
