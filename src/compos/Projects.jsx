@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './ui/project';
 import librarypic from './projectimg/library.png'
+import easyViewPic from './projectimg/easyView.png'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 const Projects = ({lightmode, darkmode}) => {
@@ -19,6 +20,14 @@ const Projects = ({lightmode, darkmode}) => {
                         githublink="https://github.com/OZY3112/E-Commerce-library"
                         websitelink="https://e-commerce-library.vercel.app/"
                         tools="HTML | CSS | JavaScript | React | Node.Js"
+                        />
+                        <Project img={easyViewPic} 
+                        title="E-Commerce-library"
+                        para="Using the TMDB api and axios i made a website (in 3 days) where u can look for a movie name and find all of the 
+                        results and also getting access to more information by click on the movie poster."
+                        githublink="https://github.com/OZY3112/E-Commerce-library"
+                        websitelink="https://easy-view.vercel.app/"
+                        tools="HTML | SCSS | JavaScript | React | Vite | axios | Node.Js"
                         />
                     </div>
                 </div>
