@@ -3,11 +3,11 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const Project = ({img, title, para, githublink, websitelink, tools}) => {
+const Project = ({key, img, title, para, githublink, websitelink, tools}) => {
     return (
 
    
-  <div class="project__wrapper">
+  <div class="project__wrapper" key={key}>
   <img src={img} class="project__img" alt=""/>
   <div class="project__wrapper--bg"></div>
   <div class="project__description">
