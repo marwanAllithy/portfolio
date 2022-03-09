@@ -11,6 +11,7 @@ import css from './techimgs/css.svg'
 import bootstrap from './techimgs/Bootstrap_logo.svg.png'
 import vite from './techimgs/vitelogo.svg'
 import Mantine from './techimgs/mantine.png'
+import tailwind from './techimgs/tailwind.png'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
@@ -57,6 +58,7 @@ const Skills = ({lightmode, darkmode}) => {
                     </div>
                     <div className="skills__cont" data-aos="fade-up">
                         <div className="skills">
+                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={tailwind}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
                         </div>
