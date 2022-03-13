@@ -13,7 +13,7 @@ export const projects = [
     {
         img: easyViewPic,
         title:"Easy view",
-        para:"Using the TMDB api and axios i made a website (in 3 days) where u can look for a movie name and find all of the results and also getting access to more information by click on the movie poster.",
+        para:"Using the TMDB API and Axios I made a website (in 3 days) where you can look for a movie name and find all of the results and also get access to more information by clicking on the movie poster.",
         githublink: "https://github.com/OZY3112/views_bata",
         websitelink: "https://easy-view.vercel.app/",
         tools: "HTML | SCSS | JavaScript | React | Vite | axios | Node.Js"
