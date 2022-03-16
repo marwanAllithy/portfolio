@@ -39,11 +39,12 @@ const Skills = ({lightmode, darkmode}) => {
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="400" techname="HTML" techimg={html}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="200" techname="JavaScript" techimg={JS}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="700" techname="CSS" techimg={css}/>
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="100" techname="SASS" techimg={sass}/>
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React.js" techimg={react} />
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Next.js" techimg={Nextjs} />
                             <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Node.js" techimg={Node}/>
+                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Next.js" techimg={Nextjs} />
+                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="100" techname="SASS" techimg={sass}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Firebase" techimg={firebase}/>
+                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={tailwind}/> 
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Vite" techimg={vite}/>
                             <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Mantine" techimg={Mantine}/>
                             
@@ -60,7 +61,6 @@ const Skills = ({lightmode, darkmode}) => {
                     </div>
                     <div className="skills__cont" data-aos="fade-up">
                         <div className="skills">
-                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={tailwind}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
                         </div>
