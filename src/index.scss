@@ -482,8 +482,9 @@ SKILLS
 
 #skills{
   width: 100%;
-  .skill__cont{
-    margin: 2rem;
+  .skill__cont--wrapper{
+    justify-content: center;
+    margin: 2rem auto;
     .skill__section--title--cont{
       font-size: 2.2rem;
       display: flex;justify-content: center;
@@ -907,9 +908,8 @@ FOOTER
       flex-direction: column;
     }
     .skills{
-      
-     
-      right: 25% !important;
+      width: 50vw;
+      right: -30% !important;
       position: relative !important;
       transform: translateX(-25%) !important;
     }
@@ -947,10 +947,9 @@ FOOTER
   
      }
   .skills{
-     
-    left: 50%;
-    position: relative;
-    transform: translateX(-25%);
+    right: -40% !important;
+    position: relative !important;
+    transform: translateX(-25%) !important;
   }
  .landing__discription--title{
   font-size: 3.1rem !important;

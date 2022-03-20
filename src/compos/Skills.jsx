@@ -13,6 +13,7 @@ import vite from './techimgs/vitelogo.svg'
 import Mantine from './techimgs/mantine.png'
 import tailwind from './techimgs/tailwind.png'
 import Nextjs from './techimgs/Nextjs.png'
+import MaterialUI from './techimgs/MaterialUILOGO.png'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
@@ -21,7 +22,7 @@ const Skills = ({lightmode, darkmode}) => {
         <section id="skills">
      
 
-            <div className="skill__cont" style={{color: lightmode ? "black" : "#e0e0e0"}}>
+            <div className="skill__cont--wrapper" style={{color: lightmode ? "black" : "#e0e0e0"}}>
                 <div className="skill__section--title--cont">
                     <h2 className="skill__section--title" data-aos="fade-up">My <span className="blue"> technological Stack</span>.</h2>
                 </div>
@@ -63,6 +64,7 @@ const Skills = ({lightmode, darkmode}) => {
                         <div className="skills">
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
                             <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
+                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="MUI" techimg={MaterialUI}/> 
                         </div>
                     </div>
                     </div>
