@@ -37,17 +37,17 @@ const Skills = ({lightmode, darkmode}) => {
                         </div>
                         <div className="skills__cont"data-aos="fade-up" >
                         <div className="skills">
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="400" techname="HTML" techimg={html}/>
-                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="200" techname="JavaScript" techimg={JS}/>
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="700" techname="CSS" techimg={css}/>
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React.js" techimg={react} />
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Node.js" techimg={Node}/>
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Next.js" techimg={Nextjs} />
-                            <Techitem lightmode={lightmode} data-aos="fade-up"data-aos-duration="100" techname="SASS" techimg={sass}/>
-                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Firebase" techimg={firebase}/>
-                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={tailwind}/> 
-                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Vite" techimg={vite}/>
-                            <Techitem lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Mantine" techimg={Mantine}/>
+                            <Techitem fontColor='#eb5c28' lightmode={lightmode} data-aos="fade-up"data-aos-duration="400" techname="HTML" techimg={html}/>
+                            <Techitem fontColor='#f7e018' lightmode={lightmode}  data-aos="fade-up"data-aos-duration="200" techname="JavaScript" techimg={JS}/>
+                            <Techitem fontColor='#1b73ba' lightmode={lightmode} data-aos="fade-up"data-aos-duration="700" techname="CSS" techimg={css}/>
+                            <Techitem fontColor='#61dbfb' lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="React.js" techimg={react} />
+                            <Techitem fontColor='#75ac63' lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Node.js" techimg={Node}/>
+                            <Techitem fontColor='#000000' lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Next.js" techimg={Nextjs} />
+                            <Techitem fontColor='#d1689c' lightmode={lightmode} data-aos="fade-up"data-aos-duration="100" techname="SASS" techimg={sass}/>
+                            <Techitem fontColor='#fcca3f' lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Firebase" techimg={firebase}/>
+                            <Techitem fontColor='#13c3b6'  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="Tailwind" techimg={tailwind}/> 
+                            <Techitem fontColor='#ffd32b' lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Vite" techimg={vite}/>
+                            <Techitem fontColor='#339af0' lightmode={lightmode}  data-aos="fade-up"data-aos-duration="500" techname="Mantine" techimg={Mantine}/>
                             
                         </div>
                     </div>
@@ -62,9 +62,9 @@ const Skills = ({lightmode, darkmode}) => {
                     </div>
                     <div className="skills__cont" data-aos="fade-up">
                         <div className="skills">
-                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
-                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
-                            <Techitem  lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="MUI" techimg={MaterialUI}/> 
+                            <Techitem  fontColor='#339af0' lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="TypeScript" techimg={ts}/> 
+                            <Techitem  fontColor='#7708f6' lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="BootStrap" techimg={bootstrap}/> 
+                            <Techitem  fontColor='#007fff' lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname="MUI" techimg={MaterialUI}/> 
                         </div>
                     </div>
                     </div>
