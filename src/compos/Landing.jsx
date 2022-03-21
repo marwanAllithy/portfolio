@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import {  faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import {  faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import resume from '../assets/my-resume.pdf'
 import React, { useEffect, useState } from 'react';
@@ -48,9 +48,17 @@ const Landing = ({handledarkmode, darkmode, lightmode}) => {
                                 </div>
                                 </li>
                                 <li className="landing__link click">
+                                <div className="landing__link--cont">
+
+                                    <a href="mailto:marwan@gmail.com"  rel="noreferrer noopener" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} className="landing__link--anchor--blue">
+                                    <FontAwesomeIcon icon={faEnvelope} />
+                                    </a>
+                                </div>
+                                </li>
+                                <li className="landing__link click">
                                     <div className="landing__link--cont">
 
-                                    <a href={resume} className="landing__link--anchor--blue" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}}  rel="noreferrer noopener" target="_blank">
+                                    <a href={resume} className="landing__link--anchor--pink" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}}  rel="noreferrer noopener" target="_blank">
                                         <FontAwesomeIcon icon={faFilePdf}/>
                                     </a>
                                     </div>
