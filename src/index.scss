@@ -499,11 +499,11 @@ SKILLS
     .skill__Proficient--cont{
       width: 33vw;
       .skill__Proficient{
-      border-right: solid 1px ;
-
         .skill--Proficien--title--cont{
           .skill__Proficient--title{
             font-size: 2rem;
+            display: flex;
+            justify-content: center;
             
           }
         }
@@ -517,7 +517,8 @@ SKILLS
         .skill--Familiar--title--cont{
           .skill__Familiar--title{
               font-size: 2rem;
-
+              display: flex;
+              justify-content: center;
             }
           }
         }
