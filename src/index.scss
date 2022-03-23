@@ -500,10 +500,10 @@ SKILLS
       width: 33vw;
       .skill__Proficient{
         .skill--Proficien--title--cont{
+          display: flex;
+          justify-content: center;
           .skill__Proficient--title{
             font-size: 2rem;
-            display: flex;
-            justify-content: center;
             
           }
         }
@@ -515,10 +515,10 @@ SKILLS
       margin-left: 1rem;
       .skill__Familiar{
         .skill--Familiar--title--cont{
+          display: flex;
+          justify-content: center;
           .skill__Familiar--title{
-              font-size: 2rem;
-              display: flex;
-              justify-content: center;
+            font-size: 2rem;
             }
           }
         }

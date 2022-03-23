@@ -8,7 +8,7 @@ export const projects = [
         para: "Using best practices with Html (BEM), Css, and javaScript, while using React (+hooks) i built a fake E-library and a clean UI design with a easy-to-understand layout for the website.",
         githublink: "https://github.com/OZY3112/E-Commerce-library",
         websitelink: "https://e-commerce-library.vercel.app/",
-        tools: "HTML | CSS | JavaScript | React | Node.Js"
+        tools: " CSS | JavaScript | React | Node.Js"
     },
     {
         img: easyViewPic,
@@ -16,6 +16,6 @@ export const projects = [
         para:"Using the TMDB API and Axios I made a website (in 3 days) where you can look for a movie name and find all of the results and also get access to more information by clicking on the movie poster.",
         githublink: "https://github.com/OZY3112/views_bata",
         websitelink: "https://easy-view.vercel.app/",
-        tools: "HTML | SCSS | JavaScript | React | Vite | axios | Node.Js"
+        tools: " SCSS | JavaScript | React | Vite | axios | Node.Js"
     }
 ]
