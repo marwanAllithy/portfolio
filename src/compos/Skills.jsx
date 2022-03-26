@@ -1,5 +1,5 @@
 import Techitem from './ui/techitem';
-import { ProficientArray, familiarArraw } from './helper/skillArray'
+import { ProficientArray, familiarArray } from './helper/skillArray'
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
@@ -42,7 +42,7 @@ const Skills = ({lightmode, darkmode}) => {
                     <div className="skills__cont" data-aos="fade-up">
                         <div className="skills">
                             {
-                                familiarArraw.map(item => (
+                                familiarArray.map(item => (
                                 <Techitem  fontColor={item.fontColor} lightmode={lightmode} data-aos="fade-up"data-aos-duration="500" techname={item.name} techimg={item.img}/> 
                                 ))
                             }

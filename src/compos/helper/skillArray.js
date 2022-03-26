@@ -11,6 +11,7 @@ import Mantine from '../techimgs/mantine.png'
 import tailwind from '../techimgs/tailwind.png'
 import Nextjs from '../techimgs/Nextjs.png'
 import MaterialUI from '../techimgs/MaterialUILOGO.png'
+import mongodblogo from '../techimgs/mongodblogo.png'
 
 
 export const ProficientArray = [
@@ -62,7 +63,7 @@ export const ProficientArray = [
     {
         img: vite,
         name: "Vite",
-        fontColor: "#ffd32b"
+        fontColor: "#936afe"
     },
     {
         img: Mantine,
@@ -71,7 +72,12 @@ export const ProficientArray = [
     },
 ]
 
-export const familiarArraw = [
+export const familiarArray = [
+    {
+        img: mongodblogo,
+        name: "MongoDB",
+        fontColor: "#479d39"
+    },
     {
         img: ts,
         name: "TypeScript",
