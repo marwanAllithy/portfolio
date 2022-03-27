@@ -36,24 +36,29 @@ export const ProficientArray = [
         fontColor: "#61dbfb"
     },
     {
-        img: firebase,
-        name: "Firebase",
-        fontColor: "#fcca3f"
-    },
-    {
         img: Node,
         name: "Node.js",
         fontColor: "#75ac63"
     },
     {
-        img: sass,
-        name: "SASS",
-        fontColor: "#d1689c"
+        img: Nextjs,
+        name: "Next.js",
+        fontColor: "#000000"
+    },
+    {
+        img: firebase,
+        name: "Firebase",
+        fontColor: "#fcca3f"
     },
     {
         img: mongodblogo,
         name: "MongoDB",
         fontColor: "#479d39"
+    },
+    {
+        img: sass,
+        name: "SASS",
+        fontColor: "#d1689c"
     },
     {
         img: tailwind,
@@ -73,11 +78,6 @@ export const ProficientArray = [
 ]
 
 export const familiarArray = [
-    {
-        img: Nextjs,
-        name: "Next.js",
-        fontColor: "#000000"
-    },
     {
         img: ts,
         name: "TypeScript",
