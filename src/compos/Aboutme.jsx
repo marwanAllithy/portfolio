@@ -20,16 +20,17 @@ const Aboutme = ({lightmode, darkmode}) => {
                <div className="aboutme__description" data-aos="fade-up">
                    <div className="aboutme__description--cont" data-aos="fade-up"> 
                        <p className="aboutme__description--para" data-aos="fade-up">
-                           A 16 year-old front-end Developer with a huge passion for making  
-                           <span className="pink"> Beautiful</span>, <span className="pink"> Customizable</span>, 
-                           <span className="pink"> Compatible</span>, with most devices and All browsers
-                           and <span className="pink">Responsive</span> <span className="blue">User Interfaces </span>with great 
-                           <span className="blue"> User Experiences </span>with my passions,
-                           I love problem-solving creating solutions that could positively impact the world. 
+                           A 16-year-old front-end Developer with a huge passion for 
+                           making <span className="pink">  Beautiful</span>,  
+                           <span className="pink"> Customizable</span>, <span className="pink"> Compatible</span> and <span className="pink"> Responsive  </span> <span className="blue"> User Interfaces </span> 
+                            with great <span className="blue"> User Experiences </span> with my passions.
                            <br /><br />
-                           Currently, A <span className="pink"> High school student </span> from 
-                           <span className="blue"> Egypt</span>, learning all I can about Web Development, building client's projects.
-                           And a private programming <span className="blue"> Tutor</span>.
+                            I love <span className="blue"> problem-solving </span> and creating solutions
+                             that could positively impact the world.
+                            <br /><br />
+                            Currently, A <span className="pink"> High school student </span> from Egypt, 
+                            learning all I can about Web Development, building client projects. And a 
+                            private programming  <span className="blue">Tutor</span>.
                        </p>
                    </div>
                </div>
