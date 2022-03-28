@@ -18,8 +18,8 @@ const Aboutme = ({lightmode, darkmode}) => {
                     </figure>   
                </div>
                <div className="aboutme__description" data-aos="fade-up">
-                   <div className="aboutme__description--cont" data-aos="fade-up"> 
-                       <p className="aboutme__description--para" data-aos="fade-up">
+                   <div className="aboutme__description--cont"> 
+                       <p className="aboutme__description--para">
                            A 16-year-old front-end Developer with a huge passion for 
                            making <span className="pink">  Beautiful</span>,  
                            <span className="pink"> Customizable</span>, <span className="pink"> Compatible</span> and <span className="pink"> Responsive  </span> <span className="blue"> User Interfaces </span> 

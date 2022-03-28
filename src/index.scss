@@ -939,7 +939,18 @@ FOOTER
     .landing__astro{
       display: none !important;
     }
-    
+    .aboutme__description--cont{
+      // display: inline;
+      // justify-content: center;
+      // margin: auto;
+      width: 100vw !important;
+      
+    }
+    .aboutme__description--para{
+      margin: 1rem 2rem !important;
+      // display:block;
+      // justify-content: center;
+    }
  
     
 }
@@ -1014,7 +1025,7 @@ FOOTER
 
  .aboutme__pic--cont{
    width: 90% !important;
-   height: 90% !important;
+   height: 80% !important;
    margin: 0 auto !important;
    margin-top: 3rem !important;
  }
