@@ -20,16 +20,13 @@ const Aboutme = ({lightmode, darkmode}) => {
                <div className="aboutme__description" data-aos="fade-up">
                    <div className="aboutme__description--cont"> 
                        <p className="aboutme__description--para">
-                           A 16-year-old front-end Developer with a huge passion for 
-                           making <span className="pink">  Beautiful</span>,  
-                           <span className="pink"> Customizable</span>, <span className="pink"> Compatible</span> and <span className="pink"> Responsive  </span> <span className="blue"> User Interfaces </span> 
-                            with great <span className="blue"> User Experiences </span> with my passions.
+                           A 16 year old Front End Developer with a huge passion for 
+                           making <span className="pink">  Clean </span> and 
+                           <span className="pink"> Responsive  </span> <span className="blue"> User Interfaces </span> 
+                            with great <span className="blue"> User Experiences </span>.
                            <br /><br />
-                            I love <span className="blue"> problem-solving </span> and creating solutions
-                             that could positively impact the world.
-                            <br /><br />
                             Currently, A <span className="pink"> High school student </span> from Egypt, 
-                            learning all I can about Web Development, building client projects. And a 
+                            Learning all I can about Web Development, building client projects, And a 
                             private programming  <span className="blue">Tutor</span>.
                        </p>
                    </div>
