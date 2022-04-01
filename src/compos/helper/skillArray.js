@@ -51,11 +51,6 @@ export const ProficientArray = [
         fontColor: "#fcca3f"
     },
     {
-        img: supabase,
-        name: "Supabase",
-        fontColor: "#3dce8e"
-    },
-    {
         img: sass,
         name: "SASS",
         fontColor: "#d1689c"
@@ -87,6 +82,11 @@ export const familiarArray = [
         img: MaterialUI,
         name: "MUI",
         fontColor: "#007fff"
+    },
+    {
+        img: supabase,
+        name: "Supabase",
+        fontColor: "#3dce8e"
     },
     {
         img: mongodblogo,
