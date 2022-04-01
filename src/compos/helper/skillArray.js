@@ -12,7 +12,7 @@ import tailwind from '../techimgs/tailwind.png'
 import Nextjs from '../techimgs/Nextjs.png'
 import MaterialUI from '../techimgs/MaterialUILOGO.png'
 import mongodblogo from '../techimgs/mongodblogo.png'
-
+import supabase from '../techimgs/supabase.png'
 
 export const ProficientArray = [
     {
@@ -51,9 +51,9 @@ export const ProficientArray = [
         fontColor: "#fcca3f"
     },
     {
-        img: mongodblogo,
-        name: "MongoDB",
-        fontColor: "#479d39"
+        img: supabase,
+        name: "Supabase",
+        fontColor: "#3dce8e"
     },
     {
         img: sass,
@@ -87,5 +87,10 @@ export const familiarArray = [
         img: MaterialUI,
         name: "MUI",
         fontColor: "#007fff"
+    },
+    {
+        img: mongodblogo,
+        name: "MongoDB",
+        fontColor: "#479d39"
     },
 ]
