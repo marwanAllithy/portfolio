@@ -210,7 +210,7 @@ astroooooooooooooo
   }
   @keyframes astrofloat{
     0%{
-      transform: translateY(20px)translateX(0px);
+      transform: translateY(20px) translateX(0px);
     }
     100%{
       transform: translateY(-20px) translateX(8px);
@@ -894,7 +894,12 @@ FOOTER
   .tech__item--name--cont{
     opacity: 1 !important;
   }
-  
+  .aboutme__pic--wrapper{
+    .aboutme__pic{
+      justify-content: center !important;
+      display: flex !important;
+    }
+  }
     .landing__discription--cont{
      margin-left: 1rem;
     }
@@ -941,33 +946,24 @@ FOOTER
       display: none !important;
     }
     .aboutme__description--cont{
-      // display: inline;
-      // justify-content: center;
-      // margin: auto;
       width: 100vw !important;
-      
+      justify-content: center; display: flex;
     }
     .aboutme__description--para{
-      margin: 1rem 2rem !important;
-      // display:block;
-      // justify-content: center;
+      margin: 3rem 4rem !important;
     }
  
     
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 600px) {
-  .aboutme__description--para{
-       margin-left: -1rem !important;
-  
-     }
   .skills{
     right: -40% !important;
     position: relative !important;
     transform: translateX(-25%) !important;
   }
  .landing__discription--title{
-  font-size: 3.1rem !important;
+  font-size: 2.9rem !important;
 }
 .landing__link--anchor--blue, .landing__link--anchor--pink{
   font-size: 1rem !important;
@@ -1025,14 +1021,14 @@ FOOTER
  }
 
  .aboutme__pic--cont{
-   width: 90% !important;
-   height: 80% !important;
+   width: 70% !important;
+   height: 70% !important;
    margin: 0 auto !important;
    margin-top: 3rem !important;
- }
- .aboutme__pic{
-   width: 100% !important;
-   height: 100% !important;
+   .aboutme__pic{
+     width: 100% !important;
+     height: 100% !important;
+   }
  }
  
 .contact__form--email{
