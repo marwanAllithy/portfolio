@@ -983,6 +983,10 @@ FOOTER
    margin: 0 auto !important;
    width: 100%;
  }
+ .aboutme__description--cont{
+   display: flex;justify-content: center;
+   margin-left: -3rem;
+ }
 
  .contact__form{
    width: 100vw !important;
