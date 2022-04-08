@@ -152,7 +152,7 @@ NAV BARRRRRR
   }
 
   .nav__link--list{
-    gap: 1rem;
+    // gap: 1rem;
     display: flex;
     font-weight: 700;
     font-size: 1.2rem;
@@ -1042,4 +1042,9 @@ FOOTER
   font-size: 0.6rem;
   font-weight: 700;
 }
+}
+// browser styles
+
+.nav__link {
+  margin-left: 1rem;
 }
