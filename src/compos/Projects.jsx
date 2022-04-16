@@ -8,7 +8,7 @@ const Projects = ({lightmode, darkmode}) => {
     return (
         <section id="projects" style={{background: lightmode ? "#e0e0e0":"#1f1f1f"  }} >
             <div className="porject__title--cont" data-aos="fade-up" data-aos-duration="10">
-                <h2 className="project__title" style={{color: lightmode ? "black" : "#e0e0e0"}}>My <span className="blue"> Projects</span>.</h2>
+                <h2 className="project__title section__title" style={{color: lightmode ? "black" : "#e0e0e0"}}>My <span className="blue"> Projects</span>.</h2>
             </div>
             <div className="projects__wrapper">
                 <div className="projects__cont">

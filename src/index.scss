@@ -950,9 +950,13 @@ FOOTER
       justify-content: center; display: flex;
     }
     .aboutme__description--para{
-      margin: 3rem 4rem !important;
+      margin: 3rem 8% !important;
+      font-size: 1.4rem !important;
+      width: 100vh !important;
     }
- 
+    .section__title{
+      font-size: 2.3rem !important;
+    }
     
 }
 /* SMALL PHONES, LARGE SMARTPHONES */

@@ -10,7 +10,7 @@ const Skills = ({lightmode, darkmode}) => {
 
             <div className="skill__cont--wrapper" style={{color: lightmode ? "black" : "#e0e0e0"}}>
                 <div className="skill__section--title--cont">
-                    <h2 className="skill__section--title" data-aos="fade-up">My <span className="blue"> technological Stack</span>.</h2>
+                    <h2 className="skill__section--title section__title" data-aos="fade-up">My <span className="blue"> technological Stack</span>.</h2>
                 </div>
              <div className="skills__skill--cont">
 

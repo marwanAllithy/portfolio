@@ -33,7 +33,7 @@ const Contants = ({lightmode, darkmode}) => {
     return (
         <section id="contact" style={{color: lightmode ? "black" : "#e0e0e0"}}>
             <div className="contact__section--title--cont">
-                <h2 className="contact__section--title" data-aos="fade-up">Lets <span className="blue"> Talk</span>.</h2>
+                <h2 className="contact__section--title section__title" data-aos="fade-up">Lets <span className="blue"> Talk</span>.</h2>
             </div>
             <div className="contact__form--cont">
                 <form onSubmit={sendEmail} className="contact__form">

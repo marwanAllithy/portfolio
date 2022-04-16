@@ -9,7 +9,7 @@ const Aboutme = ({lightmode, darkmode}) => {
         <section id="aboutme" style={{background: lightmode ? "#e0e0e0":"#1f1f1f"  }}>
           
            <div className="aboutme__section--title-cont"  data-aos="fade-up"  style={{color: lightmode ? "black" : "#e0e0e0"}}>
-               <h2 className="aboutme__section--title">About <span className="blue">Me</span>.</h2>
+               <h2 className="aboutme__section--title section__title ">About <span className="blue">Me</span>.</h2>
            </div>
            <div className="aboutme__cont"style={{color: lightmode ? "black" : "#e0e0e0"}} >
                <div className="aboutme__pic--cont"data-aos="fade-up">
