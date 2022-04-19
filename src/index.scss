@@ -21,6 +21,7 @@ body{
 html{
   scroll-behavior: smooth;
   background: $secbg;
+  scrollbar-width: none;
 }
 .louading__bar{
   width: 100%;
@@ -435,7 +436,7 @@ SKILLS
     margin: 1.5rem;
     padding: 8px;
     .tech__item--img--cont{
-      margin-top: 8px;
+      margin-top: 12px;
       width: 100%;
       transition: 300ms;
       .tech__item--img{
@@ -714,7 +715,7 @@ contact
           border-radius: 12px;
           padding: 10px;
           font-size: 1.2rem;
-          border: solid black 1px;
+          border: solid whitesmoke 1px;
         }
       }
       .contact__form--email{
@@ -725,7 +726,7 @@ contact
           border-radius: 12px;
           padding: 10px;
           font-size: 1.2rem;
-          border: solid black 1px;
+          border: solid whitesmoke 1px;
           background-color: $sec;
         }
       }
@@ -734,7 +735,7 @@ contact
 
         margin: .5rem auto;
         .form__message{
-          border: solid black 1px;
+          border: solid whitesmoke 1px;
           width: 45vw;
           border-radius: 12px;
           background-color: $sec;
@@ -747,7 +748,7 @@ contact
     
       .contact__form--btn{
         .form__submit{
-          border: solid black 1px;
+          border: solid whitesmoke 1px;
           list-style-type:none;
           border-style:none;
           background: none;
@@ -764,6 +765,7 @@ contact
         font-size: 20px;
         background: $blue;
         color: $fontcolor;
+        cursor: pointer;
         padding: .8rem;
         padding-left: 0.4em;
         display: flex;

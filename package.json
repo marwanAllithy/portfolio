@@ -16,6 +16,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.2",
     "emailjs-com": "^3.2.0",
+    "eslint-config-react-app": "^7.0.1",
     "flexbox": "^0.0.3",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.6",
@@ -30,7 +31,8 @@
     "sass": "^1.49.0",
     "styled-components": "^5.3.3",
     "tailwindcss": "^3.0.19",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.18"
   },
   "scripts": {
     "start": "react-scripts start",

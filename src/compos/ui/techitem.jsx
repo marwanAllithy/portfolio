@@ -3,7 +3,7 @@ import React from 'react';
 const Techitem = ({techname, techimg, svg, lightmode, fontColor}) => {
     return (
         <div className="tech__item--cont">
-            <div className="tech__item"  style={{boxShadow: lightmode ?  "-2px 2px 15px #000000"  :"-5px 5px 15px #000000" }}>
+            <div className="tech__item"  style={{boxShadow: lightmode ?  "-2px 2px 15px #1d1d1d "  :"-5px 5px 15px #000000" }}>
                 <div className="tech__item--img--cont">
                     <img src={techimg} alt="" className="tech__item--img" />
                 </div>
