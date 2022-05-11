@@ -1,91 +1,151 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import {  faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import resume from '../assets/my-resume.pdf'
-import React, { useEffect, useState } from 'react';
-import Lightastro from './ui/Lightastro'
-import Darkastro from './ui/darkastro'
-const Landing = ({handledarkmode, darkmode, lightmode}) => {
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFilePdf, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import resume from "../assets/my-resume.pdf";
+import React, { useEffect, useState } from "react";
+import Lightastro from "./ui/Lightastro";
+import Darkastro from "./ui/darkastro";
+const Landing = ({ handledarkmode, darkmode, lightmode }) => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
 
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.pageYOffset)
-     
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
 
-        return () => window.removeEventListener('scroll', handleScroll)
-    },[] )
-    
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    return (
-        <section id="landing">
-            
-            <div className="landing__discription--cont" >
-                <div className="landing__discription" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} >
-                    <h1 className="landing__discription--title" style={{transform : `translateY(${offsetY * 0.27}px)`,}}>
-                        Hello, I'm <span className="blue">Marwan Allisy</span>.
-                    </h1>
-                    <div className="landing__discription--para" style={{transform : `translateY(${offsetY * 0.27}px)`,}}>
-                    I'm a <b className='pink'>Frontend Software Developer</b> with a strong passion for building web applications
-                     with great user experiences.
-                    </div> 
-                    <div className="landing__links--cont" style={{transform : `translateY(${offsetY * 0.27}px)`,}}>
-                        <div className="Landing__links">
-                            <ul className="landing__link--list">
-                                <li className="landing__link click ">
-                                <div className="landing__link--cont">
-                                    <a  href="https://www.linkedin.com/in/marwan-allisy-067838224/"rel="noopener noreferrer"  target="_blank" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} className="landing__link--anchor--blue">
-                                        <FontAwesomeIcon icon={faLinkedin}/>
-                                    </a>
-                                </div>
-                                </li>
-                                <li className="landing__link click">
-                                <div className="landing__link--cont">
-
-                                    <a href="https://github.com/OZY3112"  rel="noreferrer noopener" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} className="landing__link--anchor--pink">
-                                        <FontAwesomeIcon  icon={faGithub}/>
-                                    </a>
-                                </div>
-                                </li>
-                                <li className="landing__link click">
-                                <div className="landing__link--cont">
-
-                                    <a href="mailto:marwan@gmail.com"  rel="noreferrer noopener" target="_blank" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}} className="landing__link--anchor--blue">
-                                    <FontAwesomeIcon icon={faEnvelope} />
-                                    </a>
-                                </div>
-                                </li>
-                                <li className="landing__link click">
-                                    <div className="landing__link--cont">
-
-                                    <a href={resume} className="landing__link--anchor--pink" style={{color: lightmode ? "black" : "#e0e0e0",transition: "300ms"}}  rel="noreferrer noopener" target="_blank">
-                                        <FontAwesomeIcon icon={faFilePdf}/>
-                                    </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-            <div className="landing__scroll--cont hidden "  style={{transform : `translateY(${offsetY * 0.00000}px)`}}>
-                <a  href="#aboutme" className="landing__scroll click " style={{border: lightmode ? "3px solid black" : "3px solid white" ,transition: "300ms"}}   >
-                    <div className="landing__scroll--dot" style={{border: lightmode ? "3px solid black" : "3px solid white" ,background: lightmode ? "black" : "white",transition: "300ms"}}  ></div>
-                </a>
+  return (
+    <section id="landing">
+      <div className="landing__discription--cont">
+        <div
+          className="landing__discription"
+          style={{
+            color: lightmode ? "black" : "#e0e0e0",
+            transition: "300ms",
+          }}
+        >
+          <h1
+            className="landing__discription--title"
+            style={{ transform: `translateY(${offsetY * 0.27}px)` }}
+          >
+            Hello, I'm <span className="blue">Marwan Allisy</span>.
+          </h1>
+          <div
+            className="landing__discription--para"
+            style={{ transform: `translateY(${offsetY * 0.27}px)` }}
+          >
+            I'm a <b className="pink">Frontend Software Developer</b> with a
+            strong passion for building web applications with great user
+            experiences.
+          </div>
+          <div
+            className="landing__links--cont"
+            style={{ transform: `translateY(${offsetY * 0.27}px)` }}
+          >
+            <div className="Landing__links">
+              <ul className="landing__link--list">
+                <li className="landing__link click ">
+                  <div className="landing__link--cont">
+                    <a
+                      href="https://www.linkedin.com/in/marwan-allisy-067838224/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      style={{
+                        color: lightmode ? "black" : "#e0e0e0",
+                        transition: "300ms",
+                      }}
+                      className="landing__link--anchor--blue"
+                    >
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                  </div>
+                </li>
+                <li className="landing__link click">
+                  <div className="landing__link--cont">
+                    <a
+                      href="https://github.com/OZY3112"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      style={{
+                        color: lightmode ? "black" : "#e0e0e0",
+                        transition: "300ms",
+                      }}
+                      className="landing__link--anchor--pink"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </div>
+                </li>
+                <li className="landing__link click">
+                  <div className="landing__link--cont">
+                    <a
+                      href="mailto:marwan@gmail.com"
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      style={{
+                        color: lightmode ? "black" : "#e0e0e0",
+                        transition: "300ms",
+                      }}
+                      className="landing__link--anchor--blue"
+                    >
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
+                  </div>
+                </li>
+                <li className="landing__link click">
+                  <div className="landing__link--cont">
+                    <a
+                      href={resume}
+                      className="landing__link--anchor--pink"
+                      style={{
+                        color: lightmode ? "black" : "#e0e0e0",
+                        transition: "300ms",
+                      }}
+                      rel="noreferrer noopener"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faFilePdf} />
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
-                </div>
-                <div className="landing__astro--cont" style={{transform : `translateY(${offsetY * -0.27}px)`,}}>
-                    <div className="landing__astro">
-                        {
-                            lightmode ? <Lightastro/> : <Darkastro/>
-                        }
-                        {
-                            
-                        }
-                    </div>
-                </div>
-            </div>
-   
-        </section>
-    );
-}
+          </div>
+          <div
+            className="landing__scroll--cont hidden "
+            style={{ transform: `translateY(${offsetY * 0.0}px)` }}
+          >
+            <a
+              href="#aboutme"
+              className="landing__scroll click "
+              style={{
+                border: lightmode ? "3px solid black" : "3px solid white",
+                transition: "300ms",
+              }}
+            >
+              <div
+                className="landing__scroll--dot"
+                style={{
+                  border: lightmode ? "3px solid black" : "3px solid white",
+                  background: lightmode ? "black" : "white",
+                  transition: "300ms",
+                }}
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div
+          className="landing__astro--cont"
+          style={{ transform: `translateY(${offsetY * -0.27}px)` }}
+        >
+          <div className="landing__astro">
+            {lightmode ? <Lightastro /> : <Darkastro />}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Landing;
