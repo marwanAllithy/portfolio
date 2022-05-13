@@ -27,13 +27,11 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
         >
           <h1
             className="landing__discription--title"
-            style={{ transform: `translateY(${offsetY * 0.27}px)` }}
           >
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
           <div
             className="landing__discription--para"
-            style={{ transform: `translateY(${offsetY * 0.27}px)` }}
           >
             I'm a <b className="pink">Frontend Software Developer</b> with a
             strong passion for building web applications with great user
@@ -41,7 +39,6 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
           </div>
           <div
             className="landing__links--cont"
-            style={{ transform: `translateY(${offsetY * 0.27}px)` }}
           >
             <div className="Landing__links">
               <ul className="landing__link--list">
@@ -112,9 +109,18 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
               </ul>
             </div>
           </div>
+        </div>
+        <div
+          className="landing__astro--cont"
+          style={{ transform: `translateY(${offsetY * -0.27}px)` }}
+        >
+          <div className="landing__astro">
+            {lightmode ? <Lightastro /> : <Darkastro />}
+          </div>
+        </div>
+      </div>
           <div
             className="landing__scroll--cont hidden "
-            style={{ transform: `translateY(${offsetY * 0.0}px)` }}
           >
             <a
               href="#aboutme"
@@ -134,16 +140,6 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
               ></div>
             </a>
           </div>
-        </div>
-        <div
-          className="landing__astro--cont"
-          style={{ transform: `translateY(${offsetY * -0.27}px)` }}
-        >
-          <div className="landing__astro">
-            {lightmode ? <Lightastro /> : <Darkastro />}
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
