@@ -3,12 +3,18 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+import AOS from "aos";
+AOS.init();
 
-const Techitem = ({ techname, techimg, svg, lightmode, fontColor }) => {
+const Techitem = ({ techname, techimg, lightmode, fontColor }) => {
   return (
     <MouseParallaxContainer resetOnLeave>
       <MouseParallaxChild factorX={0.23} factorY={0.21} resetOnLeave>
-        <div className="tech__item--cont">
+        <div
+          className="tech__item--cont"
+          data-aos="fade"
+          data-aos-duration="900"
+        >
           <div
             className="tech__item"
             style={{
@@ -32,5 +38,4 @@ const Techitem = ({ techname, techimg, svg, lightmode, fontColor }) => {
     </MouseParallaxContainer>
   );
 };
-
 export default Techitem;

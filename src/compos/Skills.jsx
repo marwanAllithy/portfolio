@@ -6,7 +6,6 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
-AOS.init();
 const Skills = ({ lightmode, darkmode }) => {
   return (
     <section id="skills">
@@ -51,8 +50,6 @@ const Skills = ({ lightmode, darkmode }) => {
                         factorY={0.1}
                         fontColor={item.fontColor}
                         lightmode={lightmode}
-                        data-aos="fade-up"
-                        data-aos-duration="400"
                         techname={item.name}
                         techimg={item.img}
                       />
@@ -65,7 +62,7 @@ const Skills = ({ lightmode, darkmode }) => {
           <div
             className="skill__Familiar--cont"
             data-aos="fade-up"
-            data-aos-duration="500"
+            data-aos-duration="1000"
           >
             <div className="skill__Familiar">
               <div className="skill--Familiar--title--cont">
@@ -89,8 +86,6 @@ const Skills = ({ lightmode, darkmode }) => {
                         <Techitem
                           fontColor={item.fontColor}
                           lightmode={lightmode}
-                          data-aos="fade-up"
-                          data-aos-duration="500"
                           techname={item.name}
                           techimg={item.img}
                         />
@@ -106,5 +101,6 @@ const Skills = ({ lightmode, darkmode }) => {
     </section>
   );
 };
+AOS.init();
 
 export default Skills;
