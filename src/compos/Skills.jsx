@@ -23,17 +23,17 @@ const Skills = ({ lightmode, darkmode }) => {
         </div>
         <div className="skills__skill--cont">
           <div className="skill__Proficient--cont">
-            <div
-              className="skill__Proficient"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div className="skill--Proficien--title--cont">
+            <div className="skill__Proficient">
+              <div
+                className="skill--Proficien--title--cont"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <h2 className="skill__Proficient--title">
                   Tech I am <span className="pink"> Proficient </span> with.
                 </h2>
               </div>
-              <div className="skills__cont" data-aos="fade-up">
+              <div className="skills__cont">
                 <MouseParallaxContainer
                   containerStyles={{
                     width: "100%",
@@ -59,18 +59,18 @@ const Skills = ({ lightmode, darkmode }) => {
               </div>
             </div>
           </div>
-          <div
-            className="skill__Familiar--cont"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <div className="skill__Familiar--cont">
             <div className="skill__Familiar">
-              <div className="skill--Familiar--title--cont">
+              <div
+                className="skill--Familiar--title--cont"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <h2 className="skill__Familiar--title">
                   Tech I am <span className="pink"> Familiar </span>with.
                 </h2>
               </div>
-              <div className="skills__cont" data-aos="fade-up">
+              <div className="skills__cont">
                 <div className="skills">
                   <MouseParallaxContainer
                     containerStyles={{
