@@ -6,7 +6,6 @@ import Node from "../techimgs/node-logo.png";
 import sass from "../techimgs/SASS-icon.png";
 import ts from "../techimgs/typescript-icon.svg";
 import css from "../techimgs/css.svg";
-import vite from "../techimgs/vitelogo.svg";
 import Mantine from "../techimgs/mantine.png";
 import tailwind from "../techimgs/tailwind.png";
 import Nextjs from "../techimgs/Nextjs.png";
