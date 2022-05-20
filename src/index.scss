@@ -881,7 +881,7 @@ FOOTER
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .footer__link--list {
     display: none !important;
   }
@@ -988,7 +988,14 @@ FOOTER
     justify-content: center;
     margin-left: -3rem;
   }
-
+  .skill__Proficient--title,
+  .skill__Familiar--title {
+    padding: 0 30px important;
+    text-align: center;
+  }
+  .skills {
+    padding: 0;
+  }
   .contact__form {
     width: 100vw !important;
     margin: 0;
