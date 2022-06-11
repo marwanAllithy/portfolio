@@ -12,6 +12,7 @@ import Nextjs from "../techimgs/Nextjs.png";
 import MaterialUI from "../techimgs/MaterialUILOGO.png";
 import mongodblogo from "../techimgs/mongodblogo.png";
 import supabase from "../techimgs/supabase.png";
+import nestjs from "../techimgs/nestjs.png";
 
 export const ProficientArray = [
   {
@@ -20,20 +21,20 @@ export const ProficientArray = [
     fontColor: "#eb5c28",
   },
   {
-      img: css,
-      name: "CSS",
-      fontColor: "#1b73ba",
-    },
-    {
-      img: JS,
-      name: "JavaScript",
-      fontColor: "#f7e018",
-    },
-    {
-      img: ts,
-      name: "TypeScript",
-      fontColor: "#339af0",
-    },
+    img: css,
+    name: "CSS",
+    fontColor: "#1b73ba",
+  },
+  {
+    img: JS,
+    name: "JavaScript",
+    fontColor: "#f7e018",
+  },
+  {
+    img: ts,
+    name: "TypeScript",
+    fontColor: "#339af0",
+  },
   {
     img: react,
     name: "React.js",
@@ -45,9 +46,19 @@ export const ProficientArray = [
     fontColor: "#000000",
   },
   {
+    img: nestjs,
+    name: "Nest.js",
+    fontColor: "#e0234e",
+  },
+  {
     img: firebase,
     name: "Firebase",
     fontColor: "#fcca3f",
+  },
+  {
+    img: mongodblogo,
+    name: "MongoDB",
+    fontColor: "#479d39",
   },
   {
     img: sass,
@@ -81,10 +92,5 @@ export const familiarArray = [
     img: supabase,
     name: "Supabase",
     fontColor: "#3dce8e",
-  },
-  {
-    img: mongodblogo,
-    name: "MongoDB",
-    fontColor: "#479d39",
   },
 ];
