@@ -46,9 +46,9 @@ export const ProficientArray = [
     fontColor: "#000000",
   },
   {
-    img: nestjs,
-    name: "Nest.js",
-    fontColor: "#e0234e",
+    img: supabase,
+    name: "Supabase",
+    fontColor: "#3dce8e",
   },
   {
     img: firebase,
@@ -89,8 +89,8 @@ export const familiarArray = [
     fontColor: "#007fff",
   },
   {
-    img: supabase,
-    name: "Supabase",
-    fontColor: "#3dce8e",
+    img: nestjs,
+    name: "Nest.js",
+    fontColor: "#e0234e",
   },
 ];
