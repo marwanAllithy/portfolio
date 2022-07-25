@@ -1,6 +1,5 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFilePdf, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaFilePdf, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+
 import resume from "../assets/my-resume.pdf";
 import React, { useEffect, useState } from "react";
 import Lightastro from "./ui/Lightastro";
@@ -25,21 +24,15 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
             transition: "300ms",
           }}
         >
-          <h1
-            className="landing__discription--title"
-          >
+          <h1 className="landing__discription--title">
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
-          <div
-            className="landing__discription--para"
-          >
+          <div className="landing__discription--para">
             I'm a <b className="pink">Frontend Software Developer</b> with a
             strong passion for building web applications with great user
             experiences.
           </div>
-          <div
-            className="landing__links--cont"
-          >
+          <div className="landing__links--cont">
             <div className="Landing__links">
               <ul className="landing__link--list">
                 <li className="landing__link click ">
@@ -54,7 +47,7 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
                       }}
                       className="landing__link--anchor--blue"
                     >
-                      <FontAwesomeIcon icon={faLinkedin} />
+                      <FaLinkedin />
                     </a>
                   </div>
                 </li>
@@ -70,7 +63,7 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
                       }}
                       className="landing__link--anchor--pink"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FaGithub />
                     </a>
                   </div>
                 </li>
@@ -86,7 +79,7 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
                       }}
                       className="landing__link--anchor--blue"
                     >
-                      <FontAwesomeIcon icon={faEnvelope} />
+                      <FaEnvelope />
                     </a>
                   </div>
                 </li>
@@ -102,7 +95,7 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
                       rel="noreferrer noopener"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={faFilePdf} />
+                      <FaFilePdf />
                     </a>
                   </div>
                 </li>
@@ -119,27 +112,25 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
           </div>
         </div>
       </div>
+      <div className="landing__scroll--cont hidden ">
+        <a
+          href="#aboutme"
+          className="landing__scroll click "
+          style={{
+            border: lightmode ? "3px solid black" : "3px solid white",
+            transition: "300ms",
+          }}
+        >
           <div
-            className="landing__scroll--cont hidden "
-          >
-            <a
-              href="#aboutme"
-              className="landing__scroll click "
-              style={{
-                border: lightmode ? "3px solid black" : "3px solid white",
-                transition: "300ms",
-              }}
-            >
-              <div
-                className="landing__scroll--dot"
-                style={{
-                  border: lightmode ? "3px solid black" : "3px solid white",
-                  background: lightmode ? "black" : "white",
-                  transition: "300ms",
-                }}
-              ></div>
-            </a>
-          </div>
+            className="landing__scroll--dot"
+            style={{
+              border: lightmode ? "3px solid black" : "3px solid white",
+              background: lightmode ? "black" : "white",
+              transition: "300ms",
+            }}
+          ></div>
+        </a>
+      </div>
     </section>
   );
 };

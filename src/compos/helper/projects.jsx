@@ -1,6 +1,7 @@
 import librarypic from "../projectimg/library.png";
 import easyViewPic from "../projectimg/easyView.png";
 import wordlePic from "../projectimg/wordle.png";
+import valo from "../projectimg/valo.png";
 
 export const projects = [
   {
@@ -26,5 +27,13 @@ export const projects = [
     githublink: "https://github.com/OZY3112/views_bata",
     websitelink: "https://easy-view.vercel.app/",
     tools: " SCSS | JavaScript | React | Vite | axios | Node.Js",
+  },
+  {
+    img: valo,
+    title: "VALO-match",
+    para: "Matching game with a valorant theme",
+    githublink: "https://github.com/OZY3112/matching-game",
+    websitelink: "https://valo-match.vercel.app/",
+    tools: " tailwindcss | chakra-ui| JavaScript | TypeScript | React | Vite | | Node.Js",
   },
 ];
