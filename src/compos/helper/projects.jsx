@@ -13,6 +13,14 @@ export const projects = [
     tools: " SCSS | Cookies | JavaScript | React | Node.Js",
   },
   {
+    img: valo,
+    title: "VALO-match",
+    para: "Matching game with a valorant theme",
+    githublink: "https://github.com/OZY3112/matching-game",
+    websitelink: "https://valo-match.vercel.app/",
+    tools: " tailwindcss | chakra-ui| JavaScript | TypeScript | React | Vite | Node.Js",
+  },
+  {
     img: librarypic,
     title: "E-Commerce library",
     para: "Using best practices with Html (BEM), Css, and javaScript, while using React (+hooks) i built a fake E-library and a clean UI design with a easy-to-understand layout for the website.",
@@ -27,13 +35,5 @@ export const projects = [
     githublink: "https://github.com/OZY3112/views_bata",
     websitelink: "https://easy-view.vercel.app/",
     tools: " SCSS | JavaScript | React | Vite | axios | Node.Js",
-  },
-  {
-    img: valo,
-    title: "VALO-match",
-    para: "Matching game with a valorant theme",
-    githublink: "https://github.com/OZY3112/matching-game",
-    websitelink: "https://valo-match.vercel.app/",
-    tools: " tailwindcss | chakra-ui| JavaScript | TypeScript | React | Vite | | Node.Js",
   },
 ];
