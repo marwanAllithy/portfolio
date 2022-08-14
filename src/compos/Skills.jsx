@@ -6,7 +6,7 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
-const Skills = ({ lightmode, darkmode }) => {
+const Skills = ({ lightmode }) => {
   return (
     <section id="skills">
       <div

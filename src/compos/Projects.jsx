@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { projects } from "./helper/projects";
 
-const Projects = ({ lightmode, darkmode }) => {
+const Projects = ({ lightmode }) => {
   return (
     <section
       id="projects"

@@ -3,7 +3,7 @@ import portpic from '../assets/port.jpg';
 import AOS  from 'aos';
 import "aos/dist/aos.css";
 AOS.init();
-const Aboutme = ({lightmode, darkmode}) => {
+const Aboutme = ({lightmode}) => {
     
     return (
         <section id="aboutme" style={{background: lightmode ? "#e0e0e0":"#1f1f1f"  }}>

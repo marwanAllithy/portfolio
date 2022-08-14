@@ -2,7 +2,7 @@ import Logolightmde from "../assets/logo.svg";
 import Logodarkmode from "../assets/logo-light.svg";
 import { FaAdjust } from "react-icons/fa";
 
-const Nav = ({ handledarkmode, handleLightmode, darkmode, lightmode }) => {
+const Nav = ({ handledarkmode, handleLightmode, lightmode }) => {
   return (
     <nav id="navbar">
       <figure className="nav__logo">

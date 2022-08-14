@@ -4,7 +4,7 @@ import resume from "../assets/my-resume.pdf";
 import React, { useEffect, useState } from "react";
 import Lightastro from "./ui/Lightastro";
 import Darkastro from "./ui/darkastro";
-const Landing = ({ handledarkmode, darkmode, lightmode }) => {
+const Landing = ({ lightmode }) => {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -28,8 +28,8 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
           <div className="landing__discription--para">
-            I'm a <b className="pink">Freelanced Frontend Software Developer</b> with a
-            strong passion for building web applications with great user
+            I'm a <b className="pink">Freelanced Frontend Software Developer</b>{" "}
+            with a strong passion for building web applications with great user
             experiences.
           </div>
           <div className="landing__links--cont">
