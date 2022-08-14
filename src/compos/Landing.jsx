@@ -1,6 +1,4 @@
-import { FaFilePdf, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-
-import resume from "../assets/my-resume.pdf";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
 import Lightastro from "./ui/Lightastro";
 import Darkastro from "./ui/darkastro";
@@ -80,22 +78,6 @@ const Landing = ({ lightmode }) => {
                       className="landing__link--anchor--blue"
                     >
                       <FaEnvelope />
-                    </a>
-                  </div>
-                </li>
-                <li className="landing__link click">
-                  <div className="landing__link--cont">
-                    <a
-                      href={resume}
-                      className="landing__link--anchor--pink"
-                      style={{
-                        color: lightmode ? "black" : "#e0e0e0",
-                        transition: "300ms",
-                      }}
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <FaFilePdf />
                     </a>
                   </div>
                 </li>
