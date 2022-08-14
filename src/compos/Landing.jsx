@@ -28,7 +28,7 @@ const Landing = ({ handledarkmode, darkmode, lightmode }) => {
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
           <div className="landing__discription--para">
-            I'm a <b className="pink">Frontend Software Developer</b> with a
+            I'm a <b className="pink">Freelanced Frontend Software Developer</b> with a
             strong passion for building web applications with great user
             experiences.
           </div>
