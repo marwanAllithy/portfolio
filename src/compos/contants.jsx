@@ -12,18 +12,16 @@ const Contants = ({ lightmode, darkmode }) => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_yfl4yvh",
+        "template_0initsy",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "user_Haw7geORIGqUyOapjh7SU"
       )
       .then(
         (result) => {
-          setLoading(false);
-
           setSuccess(true);
         },
         (error) => {
@@ -32,7 +30,7 @@ const Contants = ({ lightmode, darkmode }) => {
         }
       );
     e.target.reset();
-    setLoading(true);
+    setLoading(false);
   };
 
   return (
