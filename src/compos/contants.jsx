@@ -8,6 +8,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 const Contants = ({ lightmode, darkmode }) => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,8 +21,14 @@ const Contants = ({ lightmode, darkmode }) => {
         "user_Haw7geORIGqUyOapjh7SU"
       )
       .then(
-        (result) => setSuccess(true),
-        (error) => setSuccess(false)
+        (result) => {
+          setSuccess(true);
+          setError(false);
+        },
+        (error) => {
+          setSuccess(false);
+          setError(true);
+        }
       );
     e.target.reset();
     setLoading(false);
@@ -136,14 +143,15 @@ const Contants = ({ lightmode, darkmode }) => {
               </>
             </button>
           )}
-          {success ? (
+          {success && (
             <div
               style={{ color: lightmode ? "black" : "#e0e0e0" }}
               className="contacts__success--cont"
             >
               Success! your message has successfully reached me.
             </div>
-          ) : (
+          )}
+          {error && (
             <div
               style={{ color: lightmode ? "black" : "#e0e0e0" }}
               className="contacts__error--cont"
