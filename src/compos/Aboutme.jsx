@@ -38,20 +38,14 @@ const Aboutme = ({ lightmode }) => {
         <div className="aboutme__description" data-aos="fade-up">
           <div className="aboutme__description--cont">
             <p className="aboutme__description--para">
-              A Front End Developer with a huge passion for making{" "}
-              <span className="pink"> Clean </span> and
-              <span className="pink"> Responsive </span>{" "}
-              <span className="blue"> User Interfaces </span>
-              with great <span className="blue"> User Experiences </span>.
+              A front-end developer with a vast passion for making{" "}
+              <span className="pink"> clean </span> and
+              <span className="pink"> responsive </span>
+              <span className="blue"> websites</span>
               <br />
-              <br />
-              Currently, A <span className="pink">
-                {" "}
-                High school student{" "}
-              </span>{" "}
-              from Egypt, Learning all I can about Web Development, building
-              client projects, And a private programming{" "}
-              <span className="blue">Tutor</span>.
+              <br />I help <span className="blue">businesses</span> reach global
+              audiences by building <span className="pink"> engaging</span>{" "}
+              websites.
             </p>
           </div>
         </div>
