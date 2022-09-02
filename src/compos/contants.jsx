@@ -9,6 +9,8 @@ const Contants = ({ lightmode, darkmode }) => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
+
   const form = useRef();
   const sendEmail = (e) => {
     setLoading(true);
@@ -24,6 +26,7 @@ const Contants = ({ lightmode, darkmode }) => {
         (result) => {
           setSuccess(true);
           setError(false);
+          setMessageSent(true);
           setLoading(false);
         },
         (error) => {
@@ -53,6 +56,7 @@ const Contants = ({ lightmode, darkmode }) => {
             data-aos-duration="1000"
           >
             <input
+              disabled={messageSent || loading}
               type="text"
               className="form__name"
               placeholder="Name..."
@@ -71,6 +75,7 @@ const Contants = ({ lightmode, darkmode }) => {
             data-aos-duration="1500"
           >
             <input
+              disabled={messageSent || loading}
               type="email"
               name="email"
               placeholder="E-mail..."
@@ -89,6 +94,7 @@ const Contants = ({ lightmode, darkmode }) => {
             data-aos-duration="2000"
           >
             <textarea
+              disabled={messageSent || loading}
               type="text"
               name="message"
               placeholder="Message..."
