@@ -1,5 +1,4 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-
 import React, { useEffect, useState } from "react";
 import Lightastro from "./ui/Lightastro";
 import Darkastro from "./ui/darkastro";
@@ -27,9 +26,9 @@ const Landing = ({ lightmode }) => {
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
           <div className="landing__discription--para">
-            I'm a <b className="pink">Freelanced Frontend Software Developer</b>{" "}
-            with a strong passion for building web applications with great user
-            experiences.
+            A <b className="pink">Freelanced Frontend Software Developer</b>,
+            <br />
+            I help <span className="blue">businesses</span> reach <span className="pink">global</span> audiences by building engaging websites.
           </div>
           <div className="landing__links--cont">
             <div className="Landing__links">

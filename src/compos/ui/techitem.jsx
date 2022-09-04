@@ -6,7 +6,7 @@ import {
 import AOS from "aos";
 AOS.init();
 
-const Techitem = ({ techname, techimg, lightmode, fontColor }) => {
+const Techitem = ({ techname, techimg, fontColor }) => {
   return (
     <MouseParallaxContainer resetOnLeave>
       <MouseParallaxChild factorX={0.23} factorY={0.21} resetOnLeave>
@@ -18,9 +18,8 @@ const Techitem = ({ techname, techimg, lightmode, fontColor }) => {
           <div
             className="tech__item"
             style={{
-              boxShadow: lightmode
-                ? "-2px 2px 15px #1d1d1d "
-                : "-5px 5px 15px #000000",
+              boxShadow: 
+                "-5px 5px 15px #000000",
             }}
           >
             <div className="tech__item--img--cont">

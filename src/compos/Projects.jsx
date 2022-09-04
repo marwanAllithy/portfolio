@@ -3,12 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { projects } from "./helper/projects";
 
-const Projects = ({ lightmode }) => {
+const Projects = () => {
   return (
-    <section
-      id="projects"
-      style={{ background: lightmode ? "#e0e0e0" : "#1f1f1f" }}
-    >
+    <section id="projects" style={{ background: "#1f1f1f" }}>
       <div
         className="porject__title--cont"
         data-aos="fade-up"
@@ -16,7 +13,7 @@ const Projects = ({ lightmode }) => {
       >
         <h2
           className="project__title section__title"
-          style={{ color: lightmode ? "black" : "#e0e0e0" }}
+          style={{ color: "#e0e0e0" }}
         >
           My <span className="blue"> Projects</span>.
         </h2>

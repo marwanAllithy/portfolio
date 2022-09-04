@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
-const Contants = ({ lightmode, darkmode }) => {
+const Contants = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -39,7 +39,7 @@ const Contants = ({ lightmode, darkmode }) => {
   };
 
   return (
-    <section id="contact" style={{ color: lightmode ? "black" : "#e0e0e0" }}>
+    <section id="contact" style={{ color: "#e0e0e0" }}>
       <div className="contact__section--title--cont">
         <h2
           className="contact__section--title section__title"
@@ -63,9 +63,9 @@ const Contants = ({ lightmode, darkmode }) => {
               required
               name="name"
               style={{
-                color: lightmode ? "black" : "#e0e0e0",
-                background: lightmode ? "#e0e0e0" : "#0f0f0f",
-                border: darkmode && "solid 1px white",
+                color: "#e0e0e0",
+                background: "#0f0f0f",
+                border: "solid 1px white",
               }}
             />
           </div>
@@ -82,9 +82,9 @@ const Contants = ({ lightmode, darkmode }) => {
               required
               className="form__email"
               style={{
-                color: lightmode ? "black" : "#e0e0e0",
-                background: lightmode ? "#e0e0e0" : "#0f0f0f",
-                border: darkmode && "solid 1px white",
+                color: "#e0e0e0",
+                background: "#0f0f0f",
+                border: "solid 1px white",
               }}
             />
           </div>
@@ -101,9 +101,9 @@ const Contants = ({ lightmode, darkmode }) => {
               required
               className="form__message"
               style={{
-                color: lightmode ? "black" : "#e0e0e0",
-                background: lightmode ? "#e0e0e0" : "#0f0f0f",
-                border: darkmode && "solid 1px white",
+                color: "#e0e0e0",
+                background: "#0f0f0f",
+                border: "solid 1px white",
               }}
             />
           </div>
@@ -111,7 +111,7 @@ const Contants = ({ lightmode, darkmode }) => {
             <div className="contact__form--laoding-bar--cont contact__form--btn">
               <ClipLoader
                 size={25}
-                color={lightmode ? "#e0e0e0" : "black"}
+                color={"black"}
                 className="contact__form--laoding-bar"
               />
             </div>
@@ -120,7 +120,7 @@ const Contants = ({ lightmode, darkmode }) => {
               className="contact__form--btn"
               data-aos="fade-up"
               data-aos-duration="3500"
-              style={{ color: lightmode ? "#e0e0e0" : "black" }}
+              style={{ color: "black" }}
             >
               <>
                 <div className="svg-wrapper-1">
@@ -144,7 +144,7 @@ const Contants = ({ lightmode, darkmode }) => {
                     type="submit"
                     value="Send"
                     className="form__submit"
-                    style={{ color: lightmode ? "#e0e0e0" : "black" }}
+                    style={{ color: "black" }}
                   />
                 </span>
               </>
@@ -152,17 +152,14 @@ const Contants = ({ lightmode, darkmode }) => {
           )}
           {success && (
             <div
-              style={{ color: lightmode ? "black" : "#e0e0e0" }}
+              style={{ color: "#e0e0e0" }}
               className="contacts__success--cont"
             >
               Success! your message has successfully reached me.
             </div>
           )}
           {error && (
-            <div
-              style={{ color: lightmode ? "black" : "#e0e0e0" }}
-              className="contacts__error--cont"
-            >
+            <div style={{ color: "#e0e0e0" }} className="contacts__error--cont">
               Error! seems like there is something wrong...
             </div>
           )}

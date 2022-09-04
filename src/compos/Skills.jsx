@@ -6,13 +6,10 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
-const Skills = ({ lightmode }) => {
+const Skills = () => {
   return (
     <section id="skills">
-      <div
-        className="skill__cont--wrapper"
-        style={{ color: lightmode ? "black" : "#e0e0e0" }}
-      >
+      <div className="skill__cont--wrapper" style={{ color: "#e0e0e0" }}>
         <div className="skill__section--title--cont">
           <h2
             className="skill__section--title section__title"
@@ -49,7 +46,6 @@ const Skills = ({ lightmode }) => {
                         factorX={0.03}
                         factorY={0.1}
                         fontColor={item.fontColor}
-                        lightmode={lightmode}
                         techname={item.name}
                         techimg={item.img}
                       />
@@ -85,7 +81,6 @@ const Skills = ({ lightmode }) => {
                       {familiarArray.map((item) => (
                         <Techitem
                           fontColor={item.fontColor}
-                          lightmode={lightmode}
                           techname={item.name}
                           techimg={item.img}
                         />

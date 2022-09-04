@@ -1,26 +1,18 @@
-import Logolightmde from "../assets/logo.svg";
-import Logodarkmode from "../assets/logo-light.svg";
-import { FaAdjust } from "react-icons/fa";
 
-const Nav = ({ handledarkmode, handleLightmode, lightmode }) => {
+import Logodarkmode from "../assets/logo-light.svg";
+;
+
+const Nav = () => {
   return (
     <nav id="navbar">
       <figure className="nav__logo">
-        <img
-          src={lightmode ? Logolightmde : Logodarkmode}
-          alt=""
-          className="nav__logo"
-        />
+        <img src={Logodarkmode} alt="" className="nav__logo" />
       </figure>
       <ul className="nav__link--list">
-        <li
-          className={`nav__link hidden hover-effect hover-effect--${
-            lightmode ? "white" : "dark"
-          }`}
-        >
+        <li className={`nav__link hidden hover-effect hover-effect--dark`}>
           <a
             style={{
-              color: lightmode ? "black" : "#e0e0e0",
+              color: "#e0e0e0",
               transition: "300ms",
             }}
             href="#aboutme"
@@ -29,14 +21,10 @@ const Nav = ({ handledarkmode, handleLightmode, lightmode }) => {
             About Me
           </a>
         </li>
-        <li
-          className={`nav__link hidden hover-effect hover-effect--${
-            lightmode ? "white" : "dark"
-          }`}
-        >
+        <li className={`nav__link hidden hover-effect hover-effect--dark`}>
           <a
             style={{
-              color: lightmode ? "black" : "#e0e0e0",
+              color: "#e0e0e0",
               transition: "300ms",
             }}
             href="#skills"
@@ -45,14 +33,10 @@ const Nav = ({ handledarkmode, handleLightmode, lightmode }) => {
             Skills
           </a>
         </li>
-        <li
-          className={`nav__link hidden hover-effect hover-effect--${
-            lightmode ? "white" : "dark"
-          }`}
-        >
+        <li className={`nav__link hidden hover-effect hover-effect--dark`}>
           <a
             style={{
-              color: lightmode ? "black" : "#e0e0e0",
+              color: "#e0e0e0",
               transition: "300ms",
             }}
             href="#projects"
@@ -61,14 +45,10 @@ const Nav = ({ handledarkmode, handleLightmode, lightmode }) => {
             Projects
           </a>
         </li>
-        <li
-          className={`nav__link hidden hover-effect hover-effect--${
-            lightmode ? "white" : "dark"
-          } nav__link-contact`}
-        >
+        <li className={`nav__link hidden hover-effect hover-effect--dark`}>
           <a
             style={{
-              color: lightmode ? "black" : "#e0e0e0",
+              color: "#e0e0e0",
               transition: "300ms",
             }}
             href="#contact"
@@ -77,23 +57,6 @@ const Nav = ({ handledarkmode, handleLightmode, lightmode }) => {
             Contact Me
           </a>
         </li>
-
-        {
-          <li
-            className={`nav__link hover-effect hover-effect--${
-              lightmode ? "white" : "dark"
-            }`}
-            style={{ color: lightmode ? "black" : "e0e0e0" }}
-          >
-            <button
-              className="nav__link--anchor click adjust"
-              style={{ color: "white", transition: "300ms" }}
-              onClick={lightmode ? handledarkmode : handleLightmode}
-            >
-              <FaAdjust />
-            </button>
-          </li>
-        }
       </ul>
     </nav>
   );
