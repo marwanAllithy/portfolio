@@ -23,7 +23,7 @@ const Techitem = ({ techname, techimg, fontColor }) => {
             }}
           >
             <div className="tech__item--img--cont">
-              <img src={techimg} alt="" className="tech__item--img" />
+              <img src={techimg} alt="marwan allisy tech item" className="tech__item--img" />
             </div>
             <div
               className="tech__item--name--cont"
