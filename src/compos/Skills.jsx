@@ -6,6 +6,7 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+
 const Skills = () => {
   return (
     <section id="skills">
@@ -72,7 +73,7 @@ const Skills = () => {
                     containerStyles={{
                       width: "100%",
                     }}
-                  >
+                    >
                     <MouseParallaxChild
                       factorX={0.01}
                       factorY={0.01}
@@ -80,11 +81,11 @@ const Skills = () => {
                     >
                       {familiarArray.map((item) => (
                         <Techitem
-                          fontColor={item.fontColor}
-                          techname={item.name}
-                          techimg={item.img}
+                        fontColor={item.fontColor}
+                        techname={item.name}
+                        techimg={item.img}
                         />
-                      ))}
+                        ))}
                     </MouseParallaxChild>
                   </MouseParallaxContainer>
                 </div>
@@ -96,6 +97,6 @@ const Skills = () => {
     </section>
   );
 };
-AOS.init();
 
+AOS.init();
 export default Skills;

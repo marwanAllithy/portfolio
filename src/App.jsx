@@ -8,14 +8,7 @@ import Landing from "./compos/Landing";
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        overflow: "hidden",
-        background: "#171717",
-        transition: "300ms",
-      }}
-    >
+    <div className="App">
       <Nav />
       <Landing />
       <Aboutme />

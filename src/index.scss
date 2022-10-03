@@ -15,15 +15,14 @@ $blue: #574ae2;
 $fontcolor: black;
 
 body {
-  background: $sec;
   overflow-x: hidden;
   scroll-behavior: smooth;
   transition: 300ms;
 }
 html {
   scroll-behavior: smooth;
-  background: $secbg;
   scrollbar-width: none;
+  background: #171717;
 }
 .louading__bar {
   width: 100%;

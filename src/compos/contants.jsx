@@ -1,6 +1,5 @@
 import React from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
 import ClipLoader from "react-spinners/ClipLoader";

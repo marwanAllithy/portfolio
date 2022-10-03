@@ -1,25 +1,13 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import React, { useEffect, useState } from "react";
-import Lightastro from "./ui/Lightastro";
 import Darkastro from "./ui/darkastro";
-const Landing = ({ lightmode }) => {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+const Landing = () => {
   return (
     <section id="landing">
       <div className="landing__discription--cont">
         <div
           className="landing__discription"
           style={{
-            color: lightmode ? "black" : "#e0e0e0",
-            transition: "300ms",
+            color: "#e0e0e0",
           }}
         >
           <h1 className="landing__discription--title">
@@ -27,8 +15,9 @@ const Landing = ({ lightmode }) => {
           </h1>
           <div className="landing__discription--para">
             A <b className="pink">Freelanced Frontend Software Developer</b>,
-            <br />
-            I help <span className="blue">businesses</span> reach <span className="pink">global</span> audiences by building engaging websites.
+            <br />I help <span className="blue">businesses</span> reach{" "}
+            <span className="pink">global</span> audiences by building engaging
+            websites.
           </div>
           <div className="landing__links--cont">
             <div className="Landing__links">
@@ -40,8 +29,7 @@ const Landing = ({ lightmode }) => {
                       rel="noopener noreferrer"
                       target="_blank"
                       style={{
-                        color: lightmode ? "black" : "#e0e0e0",
-                        transition: "300ms",
+                        color: "#e0e0e0",
                       }}
                       className="landing__link--anchor--blue"
                     >
@@ -56,8 +44,7 @@ const Landing = ({ lightmode }) => {
                       rel="noreferrer noopener"
                       target="_blank"
                       style={{
-                        color: lightmode ? "black" : "#e0e0e0",
-                        transition: "300ms",
+                        color: "#e0e0e0",
                       }}
                       className="landing__link--anchor--pink"
                     >
@@ -72,8 +59,7 @@ const Landing = ({ lightmode }) => {
                       rel="noreferrer noopener"
                       target="_blank"
                       style={{
-                        color: lightmode ? "black" : "#e0e0e0",
-                        transition: "300ms",
+                        color: "#e0e0e0",
                       }}
                       className="landing__link--anchor--blue"
                     >
@@ -85,12 +71,9 @@ const Landing = ({ lightmode }) => {
             </div>
           </div>
         </div>
-        <div
-          className="landing__astro--cont"
-          style={{ transform: `translateY(${offsetY * -0.27}px)` }}
-        >
+        <div className="landing__astro--cont">
           <div className="landing__astro">
-            {lightmode ? <Lightastro /> : <Darkastro />}
+            <Darkastro />
           </div>
         </div>
       </div>
@@ -99,18 +82,16 @@ const Landing = ({ lightmode }) => {
           href="#aboutme"
           className="landing__scroll click "
           style={{
-            border: lightmode ? "3px solid black" : "3px solid white",
-            transition: "300ms",
+            border: "3px solid white",
           }}
         >
           <div
             className="landing__scroll--dot"
             style={{
-              border: lightmode ? "3px solid black" : "3px solid white",
-              background: lightmode ? "black" : "white",
-              transition: "300ms",
+              border: "3px solid white",
+              background: "white",
             }}
-          ></div>
+          />
         </a>
       </div>
     </section>

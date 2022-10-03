@@ -4,6 +4,8 @@ import {
   MouseParallaxContainer,
 } from "react-parallax-mouse";
 import AOS from "aos";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 AOS.init();
 
 const Techitem = ({ techname, techimg, fontColor }) => {
@@ -18,12 +20,16 @@ const Techitem = ({ techname, techimg, fontColor }) => {
           <div
             className="tech__item"
             style={{
-              boxShadow: 
-                "-5px 5px 15px #000000",
+              boxShadow: "-5px 5px 15px #000000",
             }}
           >
             <div className="tech__item--img--cont">
-              <img src={techimg} alt="marwan allisy tech item" className="tech__item--img" />
+              <LazyLoadImage
+                src={techimg}
+                alt="marwan allisy tech item"
+                className="tech__item--img"
+                loading="lazy"
+              />
             </div>
             <div
               className="tech__item--name--cont"
