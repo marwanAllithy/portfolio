@@ -2,8 +2,13 @@ import Project from "./ui/project";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { projects } from "./helper/projects";
+import { Carousel } from "@mantine/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const Projects = () => {
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
+
   return (
     <section id="projects" style={{ background: "#1f1f1f" }}>
       <div
@@ -25,17 +30,33 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            {projects.map((project, index) => (
-              <Project
-                key={index}
-                img={project.img}
-                title={project.title}
-                para={project.para}
-                githublink={project.githublink}
-                websitelink={project.websitelink}
-                tools={project.tools}
-              />
-            ))}
+            <Carousel
+              sx={{ minWidth: "100%" }}
+              mx="auto"
+              withIndicators
+              slideGap="xl"
+              controlsOffset="lg"
+              controlSize={50}
+              loop
+              dragFree
+              withIndicator
+              slideSize="70%"
+              plugins={[autoplay.current]}
+            >
+              {projects.map((project, index) => (
+                <Carousel.Slide>
+                  <Project
+                    key={index}
+                    img={project.img}
+                    title={project.title}
+                    para={project.para}
+                    githublink={project.githublink}
+                    websitelink={project.websitelink}
+                    tools={project.tools}
+                  />
+                </Carousel.Slide>
+              ))}
+            </Carousel>
           </div>
         </div>
       </div>
