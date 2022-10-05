@@ -5,7 +5,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const Project = ({ key, img, title, para, githublink, websitelink, tools }) => {
   return (
     <div class="project__wrapper" key={key}>
-      <LazyLoadImage src={img} class="project__img" alt="marwan allisy project " />
+      <LazyLoadImage
+        src={img}
+        visibleByDefault
+        class="project__img"
+        alt="marwan allisy project "
+      />
       <div class="project__wrapper--bg"></div>
       <div class="project__description">
         <h3 class="project__description--title">{title}</h3>
