@@ -45,15 +45,7 @@ const Projects = () => {
             >
               {projects.map((project, index) => (
                 <Carousel.Slide>
-                  <Project
-                    key={index}
-                    img={project.img}
-                    title={project.title}
-                    para={project.para}
-                    githublink={project.githublink}
-                    websitelink={project.websitelink}
-                    tools={project.tools}
-                  />
+                  <Project project={project} key={index} />
                 </Carousel.Slide>
               ))}
             </Carousel>
