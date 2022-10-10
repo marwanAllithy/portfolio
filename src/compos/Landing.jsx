@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import Darkastro from "./ui/darkastro";
 const Landing = () => {
   return (
-    <section id="landing">
+    <main id="landing">
       <div className="landing__discription--cont">
         <div
           className="landing__discription"
@@ -13,12 +13,12 @@ const Landing = () => {
           <h1 className="landing__discription--title">
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
-          <div className="landing__discription--para">
+          <p className="landing__discription--para">
             A <b className="pink">Freelanced Frontend Web Developer</b>,
             <br />I help <span className="blue">businesses</span> reach{" "}
             <span className="pink">global</span> audiences by building engaging
             websites.
-          </div>
+          </p>
           <div className="landing__links--cont">
             <div className="Landing__links">
               <ul className="landing__link--list">
@@ -55,7 +55,7 @@ const Landing = () => {
                 <li className="landing__link click">
                   <div className="landing__link--cont">
                     <a
-                      href="mailto:marwan@gmail.com"
+                      href="mailto:marwanallisy311@gmail.com"
                       rel="noreferrer noopener"
                       target="_blank"
                       style={{
@@ -94,7 +94,7 @@ const Landing = () => {
           />
         </a>
       </div>
-    </section>
+    </main>
   );
 };
 
