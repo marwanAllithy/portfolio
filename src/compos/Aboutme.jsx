@@ -2,7 +2,6 @@ import React from "react";
 import portpic from "../assets/port.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Aboutme = () => {
   return (
@@ -25,11 +24,10 @@ const Aboutme = () => {
               borderRadius: "50%",
             }}
           >
-            <LazyLoadImage
+            <img
               src={portpic}
               alt="marwan allisy portfolio"
               className="aboutme__pic"
-              loading="lazy"
             />
           </figure>
         </div>
