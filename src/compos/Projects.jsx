@@ -39,13 +39,12 @@ const Projects = () => {
               controlSize={50}
               loop
               dragFree
-              withIndicator
               slideSize="70%"
               plugins={[autoplay.current]}
             >
-              {projects.map((project, index) => (
-                <Carousel.Slide>
-                  <Project project={project} key={index} />
+              {projects.map((project, i) => (
+                <Carousel.Slide key={i}>
+                  <Project project={project}  />
                 </Carousel.Slide>
               ))}
             </Carousel>

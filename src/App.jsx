@@ -1,21 +1,24 @@
-import Aboutme from "./compos/Aboutme";
-import Footer from "./compos/Footer";
 import Nav from "./compos/Nav";
-import Projects from "./compos/Projects";
-import Skills from "./compos/Skills";
-import Contacts from "./compos/contants";
+import { lazy, Suspense } from "react";
 import Landing from "./compos/Landing";
-
+const Aboutme = lazy(() => import("./compos/Aboutme"));
+const Skills = lazy(() => import("./compos/Skills"));
+const Projects = lazy(() => import("./compos/Projects"));
+const Contacts = lazy(() => import("./compos/contants"));
+const Footer = lazy(() => import("./compos/Footer"));
 function App() {
+  const renderLoader = () => <p>Loading</p>;
   return (
     <div className="App">
       <Nav />
-      <Landing />
-      <Aboutme />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer />
+      <Suspense fallback={renderLoader()}>
+        <Landing />
+        <Aboutme />
+        <Skills />
+        <Projects />
+        <Contacts />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

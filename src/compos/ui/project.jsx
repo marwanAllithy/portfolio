@@ -2,9 +2,9 @@ import { FaLink, FaGithub } from "react-icons/fa";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const Project = ({project, key}) => {
+const Project = ({ project }) => {
   return (
-    <div class="project__wrapper" key={key}>
+    <div class="project__wrapper">
       <LazyLoadImage
         src={project.img}
         visibleByDefault

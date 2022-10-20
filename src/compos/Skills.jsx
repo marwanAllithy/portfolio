@@ -42,8 +42,9 @@ const Skills = () => {
                     factorY={0.01}
                     className="skills"
                   >
-                    {ProficientArray.map((item) => (
+                    {ProficientArray.map((item, i) => (
                       <Techitem
+                        key={i}
                         factorX={0.03}
                         factorY={0.1}
                         fontColor={item.fontColor}
@@ -73,19 +74,20 @@ const Skills = () => {
                     containerStyles={{
                       width: "100%",
                     }}
-                    >
+                  >
                     <MouseParallaxChild
                       factorX={0.01}
                       factorY={0.01}
                       className="skills"
                     >
-                      {familiarArray.map((item) => (
+                      {familiarArray.map((item, i) => (
                         <Techitem
-                        fontColor={item.fontColor}
-                        techname={item.name}
-                        techimg={item.img}
+                          key={i}
+                          fontColor={item.fontColor}
+                          techname={item.name}
+                          techimg={item.img}
                         />
-                        ))}
+                      ))}
                     </MouseParallaxChild>
                   </MouseParallaxContainer>
                 </div>

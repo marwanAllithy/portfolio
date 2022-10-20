@@ -1,16 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { MantineProvider } from "@mantine/core";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <MantineProvider >
+function AppWithCallbackAfterRender() {
+  return (
+    <MantineProvider>
       <App />
     </MantineProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+  );
+}
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<AppWithCallbackAfterRender />);
+
 reportWebVitals();

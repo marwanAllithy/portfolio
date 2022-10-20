@@ -8,6 +8,7 @@
     "@mantine/carousel": "^5.5.4",
     "@mantine/core": "^5.5.4",
     "@mantine/hooks": "^5.5.4",
+    "@types/react": ">=16.8.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.2",
     "emailjs-com": "^3.2.0",
