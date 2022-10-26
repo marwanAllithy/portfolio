@@ -38,13 +38,12 @@ const Projects = () => {
               controlsOffset="lg"
               controlSize={50}
               loop
-              dragFree
               slideSize="70%"
               plugins={[autoplay.current]}
             >
               {projects.map((project, i) => (
                 <Carousel.Slide key={i}>
-                  <Project project={project}  />
+                  <Project project={project} />
                 </Carousel.Slide>
               ))}
             </Carousel>
