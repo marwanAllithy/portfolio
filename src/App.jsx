@@ -7,12 +7,11 @@ const Projects = lazy(() => import("./compos/Projects"));
 const Contacts = lazy(() => import("./compos/contants"));
 const Footer = lazy(() => import("./compos/Footer"));
 function App() {
-  const renderLoader = () => <p>Loading</p>;
   return (
     <div className="App">
       <Nav />
-      <Suspense fallback={renderLoader()}>
-        <Landing />
+      <Landing />
+      <Suspense fallback={null}>
         <Aboutme />
         <Skills />
         <Projects />
