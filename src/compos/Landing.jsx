@@ -14,7 +14,7 @@ const Landing = () => {
             Hello, I'm <span className="blue">Marwan Allisy</span>.
           </h1>
           <p className="landing__discription--para">
-            A <b className="pink">Freelanced Frontend Web Developer</b>,
+            A <b className="pink">Freelanced Fullstack Web Developer</b>,
             <br />I help <span className="blue">businesses</span> reach{" "}
             <span className="pink">global</span> audiences by building engaging
             websites.
