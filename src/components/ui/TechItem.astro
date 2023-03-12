@@ -1,0 +1,30 @@
+---
+const { techname, techimg, fontColor } = Astro.props;
+import { Icon } from "astro-icon";
+---
+
+<div class="group mx-auto flex w-5/12 justify-center md:w-4/12">
+  <div
+    class="m-6 h-28 w-28 rounded-md bg-[#1e1e1e] p-2"
+    style={{
+      boxShadow: "-5px 5px 15px #000000",
+    }}
+  >
+    <div class="mt-3">
+      <Icon
+        name={techimg}
+        width="55"
+        height="55"
+        alt="marwan allisy tech item"
+        class="mx-auto flex duration-300 group-hover:scale-90"
+      />
+    </div>
+    <div class="" style={{ color: fontColor }}>
+      <p
+        class="mb-5 -mt-4 flex w-full justify-center text-xl font-semibold opacity-0 duration-300 group-hover:mt-0 scale-0 group-hover:scale-100 group-hover:opacity-100"
+      >
+        {techname}
+      </p>
+    </div>
+  </div>
+</div>

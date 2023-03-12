@@ -1,0 +1,29 @@
+---
+// import Logo from "../assets/logo-light.svg";
+import { navData } from "../data/navData";
+import { Icon } from "astro-icon";
+---
+
+<footer id="footer">
+  <div>
+    <div class="mt-4 flex items-center justify-center">
+      <a href="#navbar" class="click m-2">
+        <Icon name="logo" width="100" />
+      </a>
+    </div>
+    <ul class="footer__link--list mx-auto flex justify-center gap-4">
+      {
+        navData.map((i) => (
+          <li class=" text-lg ">
+            <a href={i.href} class="text-white">
+              {i.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="m-4 mb-12 flex items-center justify-center text-white">
+      Copyright &copy; 2022 Marwan Allisy
+    </div>
+  </div>
+</footer>

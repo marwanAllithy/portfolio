@@ -1,0 +1,48 @@
+---
+import "../styles/mainStyles.scss";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+
+const description =
+  "A Fullstack Software web developer with a strong passion for building web applications with great user experiences.";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+
+    <link rel="canonical" href="https://marwanallisy.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Marwan Allisy" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://marwanallisy.com/" />
+    <meta property="og:image" content="/port.jpg" />
+    <meta property="og:image:url" content="/port.jpg" />
+    <meta property="og:image:secure_url" content="/port.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Marwan Allisy picture" />
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/port.jpg" />
+    <meta name="twitter:image:alt" content={title} />
+    <meta name="twitter:domain" content="https://marwanallisy.com" />
+
+    <title>{title}</title>
+  </head>
+  <body class="overflow-x-hidden bg-[#091016]">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,17 @@
+---
+import Aboutme from "../components/Aboutme.astro";
+import Footer from "../components/Footer.astro";
+import Landing from "../components/Landing.astro";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Marwan Allisy | The Fullstack developer">
+  <Landing />
+  <Aboutme />
+  <Skills />
+  <Projects client:visible />
+  <!-- <Contacts /> -->
+  <Footer />
+</MainLayout>

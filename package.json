@@ -1,58 +1,37 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^3.4.0",
-    "@emotion/react": "^11.10.4",
-    "@mantine/carousel": "^5.5.4",
-    "@mantine/core": "^5.5.4",
-    "@mantine/hooks": "^5.5.4",
-    "@types/react": ">=16.8.0",
-    "aos": "^2.3.4",
-    "autoprefixer": "^10.4.2",
-    "emailjs-com": "^3.2.0",
-    "embla-carousel-autoplay": "^7.0.3",
-    "embla-carousel-react": "^7.0.3",
-    "eslint-config-react-app": "^7.0.1",
-    "flexbox": "^0.0.3",
-    "node-sass": "^7.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1",
-    "react-lazy-load-image-component": "^1.5.5",
-    "react-loading-screen": "^0.0.17",
-    "react-parallax-mouse": "^1.7.3",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
-    "react-spinners": "^0.11.0",
-    "sass": "^1.54.8",
-    "web-vitals": "^2.1.4",
-    "webpack": "^5.74.0",
-    "yarn": "^1.22.18"
-  },
+  "name": "new",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@astrojs/image": "^0.16.0",
+    "@astrojs/react": "^2.1.0",
+    "@astrojs/tailwind": "^3.1.0",
+    "@emotion/react": "^11.10.6",
+    "@mantine/carousel": "^6.0.1",
+    "@mantine/core": "^6.0.1",
+    "@mantine/hooks": "^6.0.1",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^2.1.0",
+    "astro-icon": "^0.8.0",
+    "embla-carousel": "^7.0.9",
+    "embla-carousel-autoplay": "^7.0.9",
+    "embla-carousel-react": "^7.0.9",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.58.3",
+    "tailwindcss": "^3.0.24"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.4"
   }
 }

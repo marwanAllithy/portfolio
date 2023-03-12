@@ -1,0 +1,80 @@
+---
+import Darkastro from "./ui/Darkastro.astro";
+import { navSocials } from "../data/navData";
+import { Icon } from "astro-icon";
+import Nav from "./Nav.astro";
+---
+
+<main id="landing" class="max-h-4/5 overflow-x-hidden bg-[#171717]">
+  <Nav />
+  <div class="landing__discription--cont">
+    <div class="landing__discription m-6 text-[#e0e0e0]">
+      <h1 class="text-5xl font-semibold lg:text-6xl">
+        Hello, I'm <span class="blue">Marwan Allisy</span>.
+      </h1>
+      <p class="mt-5 max-w-[650px] text-2xl font-medium lg:text-3xl">
+        A <b class="pink">Freelanced Fullstack Web Developer</b>,<br />I help <span
+          class="blue font-semibold">businesses</span
+        > reach
+        <span class="pink font-semibold">global</span> audiences by building engaging
+        websites.
+      </p>
+      <div>
+        <div>
+          <ul class="mt-4 flex">
+            {
+              navSocials.map((i) => (
+                <li class=" click">
+                  <div class="">
+                    <a
+                      href={i.href}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      style={{
+                        color: "#e0e0e0",
+                      }}
+                      class={`mr-3 flex h-12 w-12 items-center justify-center rounded-full p-1 text-3xl ${
+                        i.color === "blue" ? "bg-[#574ae2]" : "bg-[#f72585]"
+                      }`}
+                    >
+                      <Icon name={i.icon} width="40" />
+                    </a>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="landing__astro--cont hidden md:inline">
+      <div class="landing__astro">
+        <Darkastro />
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <a href="#aboutme" class="click">
+      <div class=""></div>
+    </a>
+  </div>
+</main>
+
+<style>
+  .landing__discription--cont {
+    width: 100%;
+    height: calc(100vh - 85px);
+    position: relative;
+    display: flex;
+    animation: levitate ease-in-out 5s infinite;
+  }
+  .landing__discription {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+  }
+</style>

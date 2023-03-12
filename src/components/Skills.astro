@@ -1,0 +1,56 @@
+---
+import Techitem from "./ui/TechItem.astro";
+import { ProficientArray, familiarArray } from "../data/skillArray";
+---
+
+<section id="skills">
+  <div class="justify-center bg-[#171717] py-4 text-[#e0e0e0]">
+    <div class="flex justify-center">
+      <h2 class="mx-auto text-5xl font-semibold">
+        My <span class="blue"> technological Stack</span>
+      </h2>
+    </div>
+    <div
+      class="mx-auto mt-10 max-w-[90%] flex-row justify-center md:flex md:max-w-[80%]"
+    >
+      <div class="mx-auto w-4/5 md:w-4/12">
+        <div>
+          <div class="flex justify-center">
+            <h2 class="text-3xl">
+              Tech I am <span class="pink"> Proficient</span> with.
+            </h2>
+          </div>
+          <div class="mx-auto flex max-w-[450px] flex-wrap justify-center">
+            {
+              ProficientArray.map((item) => (
+                <Techitem
+                  fontColor={item.fontColor}
+                  techname={item.name}
+                  techimg={item.img}
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto w-4/5 md:w-4/12">
+        <div class="flex justify-center">
+          <h2 class="text-3xl">
+            Tech I am <span class="pink"> Familiar</span>with.
+          </h2>
+        </div>
+        <div class="mx-auto flex max-w-[450px] flex-wrap justify-center">
+          {
+            familiarArray.map((item) => (
+              <Techitem
+                fontColor={item.fontColor}
+                techname={item.name}
+                techimg={item.img}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

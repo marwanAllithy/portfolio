@@ -1,0 +1,21 @@
+---
+import { navData } from "../data/navData";
+import { Icon } from "astro-icon";
+---
+
+<nav id="navbar" class="flex h-24 w-screen justify-around bg-[#171717] py-8">
+  <figure>
+    <Icon name="logo" width="70" alt="" />
+  </figure>
+  <ul class="hidden gap-5 p-4 text-xl font-bold md:flex">
+    {
+      navData.map((i) => (
+        <li class="  hover-effect ">
+          <a class="text-[#e0e0e0] text-2xl" href={i.href}>
+            {i.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@layer components {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  $pink: #f72585;
+  $blue: #574ae2;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .pink {
+    color: $pink;
+  }
+  .blue {
+    color: $blue;
+  }
+  .hover-effect {
+    position: relative;
+  }
+
+  .hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    height: 3.5px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+    background-color: white;
+  }
+
+  .hover-effect:hover:after {
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .click {
+    transition: 200ms;
+  }
+  .click:hover {
+    scale: 0.9;
+  }
+  .click:active {
+    scale: 1.1;
+  }
+  .contact__form--btn {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    font-family: inherit;
+    font-size: 20px;
+    background: $blue;
+    color: #e0e0e0;
+    cursor: pointer;
+    padding: 0.8rem;
+    padding-left: 0.4em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    width: 110px;
+  }
+
+  .contact__form--btn span,
+  .form__submit {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact__form--btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    border-style: none;
+  }
+
+  .contact__form--btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+
+  .contact__form--btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+
+  .contact__form--btn:hover .form__submit {
+    transform: translateX(5em);
+  }
+
+  .contact__form--btn:active {
+    transform: scale(0.95);
+  }
+
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  .landing__astro--cont {
+    width: 30%;
+    position: absolute;
+    right: 2%;
+    max-width: 520px;
+    animation: 3s astrointro ease-in-out;
+    .landing__astro {
+      animation: 3s astrofloat infinite alternate-reverse ease-in-out;
+    }
+  }
+  #dark__right--arm {
+    animation: 3s rightarm infinite alternate-reverse ease-in-out;
+    transform-origin: top;
+    transform-box: fill-box;
+  }
+
+  #dark__legs {
+    animation: 5s rightarm infinite alternate-reverse ease-in-out;
+    transform-origin: top;
+    transform-box: fill-box;
+  }
+  @keyframes astrointro {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes astrofloat {
+    0% {
+      transform: translateY(20px) translateX(0px);
+    }
+    100% {
+      transform: translateY(-20px) translateX(8px);
+    }
+  }
+  @keyframes rightarm {
+    0% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  @keyframes legs {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes levitate {
+    0% {
+      transform: translateY(8px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+    100% {
+      transform: translateY(8px);
+    }
+  }
+}
