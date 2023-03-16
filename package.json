@@ -13,7 +13,6 @@
     "@astrojs/image": "^0.16.0",
     "@astrojs/react": "^2.1.0",
     "@astrojs/tailwind": "^3.1.0",
-    "@astrojs/vercel": "^3.2.0",
     "@emotion/react": "^11.10.6",
     "@mantine/carousel": "^6.0.1",
     "@mantine/core": "^6.0.1",
